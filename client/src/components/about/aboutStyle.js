@@ -1,83 +1,71 @@
 import styled from "styled-components";
 
 export const AboutStyle= styled.div`
-    display: grid;
-    justify-content: center;
-    padding: 5rem;
+    font-family: inherit;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-
-    >div{
-        padding: 2rem;
-        display: grid;
-        place-items: center;
-        width: 70vw;
-        margin: auto;
-
-        .skills{
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            gap: 3rem;
-            font-size: 2rem;
-            color: gray;
-
-            >div{
-                position: relative;
-                display: grid;
-                place-items: center;
-                cursor: pointer;
-                :nth-child(2){
-                    transition: all 0.2s ease-in-out;
-                }
-                >span{
-                    position: absolute;
-                    opacity: 0;
-                    bottom: -3rem;
-                    background-color: black;
-                    color: #fff;
-                    padding: .3rem 1rem;
-                    font-size: .8rem;
-                    width: 45px;
-                    display: grid;
-                    place-items: center;
-                    margin: 0 .5rem;
-                    transition: all .3s ease-in-out;
-                    border-radius:5px;
-                    box-shadow: 0 8px 23px rgba(0,0,0,.1);
-                }
-
-                &:hover{
-                    :nth-child(2){
-                        color: blue;
-                    }
-                    >span{
-                        bottom: -2rem;
-                        opacity: 1;
-                    }
-                }
-            }
-        }
-        
+    padding:3rem 2rem;
+    background-color: rgba(0,0,0,.01);
+    gap: 1rem;
+    h1{
+        font-size: 1.4rem;
     }
 
-    .cvBtn button{
-        padding: 0.6rem 1.5rem;
-        background-color: blue;
-        color: #fff;
-        font-family: inherit;
-        box-shadow: 0 7px 16px rgba(0,0,0,.1);
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-
-        &:hover{
-            opacity: .5;
-        }
-        }
+    h2{
+        font-size: 1rem;
+        color: rgba(0,0,0,.8);
+    }
 
 
-    img{
+    div.skills{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30px,1fr));
+        place-items: center;
+        padding: 1rem;
+        font-size: 1.5rem;
+        gap: 1rem;
         width: 100%;
-        box-shadow: 0 12px 33px rgba(0,0,0,.1);
+    }
+
+    .cvBtn{
+        button{
+            padding:.4rem 1rem;
+            background-color: blue;
+            color: #fff;
+            font-weight: inherit;
+            font-family: inherit;
+            border: none;
+            box-shadow: 0 7px 14px rgba(0,0,0,.25);
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 1.3rem;
+            &:hover{
+                opacity: .5;
+            }
+        }
+    }
+
+    >*{
+        margin: 0;
+    }
+
+
+
+    @media(min-width:768px){
+       width: 60vw;
+       margin: auto;
+       background-color: #fff;
+       padding: 3rem 0;
+
+         h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.3rem;
+         color: rgba(0,0,0,.8);
+    }
+
     }
 `

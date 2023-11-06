@@ -21,25 +21,34 @@ function Hero() {
       duration: 1000
     })
   }, [])
+
+   const handleDownload = () => {
+     // Define the path to your CV file
+     const cvFilePath = './cv.pdf'; // Update the path accordingly
+
+     // Create a temporary anchor element to trigger the download
+     const link = document.createElement('a');
+     link.href = cvFilePath;
+     link.download = './cv.pdf'; // Set the desired download filename
+     link.click();
+   };
   return (
     <>
     <HeroStyle >
         <div className='hero-text' data-aos="fade-right">
-          <h3>Hello, i'm</h3>
-            <h1>Nathanim<br/>Tadele</h1>
-            <p>Experianced <span>Software Engineer </span>from Addis ababa, Ethiopia</p>
+          <h3>Hello, I'm a</h3>
+            <h1>Software<br/>Engineer.</h1>
             <div className='social'>
                 <AiFillInstagram/>
                 <AiFillLinkedin/>
                 <AiFillGithub/>
             </div>
             <div>
-              <button>Hire me</button>
-              <button className='downloadCV'>CV here</button>
+              <button onClick={handleDownload}>Hire me</button>
             </div>
         </div>
-        <div className='Image'>
-          <div data-aos="zoom-in" className='circle'>
+        <div className='Image' data-aos="fade-left">
+          <div>
             <div className='react'>
               <FaReact/>
             </div>
@@ -49,8 +58,6 @@ function Hero() {
             <div className='python'>
               <FaPython/>
             </div>
-          </div>
-          <div data-aos="fade-up">
             <img src={MyImage} alt=''/>
           </div>
         </div>
