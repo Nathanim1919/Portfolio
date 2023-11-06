@@ -34,7 +34,7 @@ function Works() {
 }, [])
   return (
     <>
-    <WorksStyle>
+    <WorksStyle id='works'>
         <div className='header'>
             <h2>My Latest projects</h2>
             <div>

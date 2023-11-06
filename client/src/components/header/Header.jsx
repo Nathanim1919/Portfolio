@@ -7,6 +7,7 @@ import {
   AiOutlineClose
 } from 'react-icons/ai';
 import styled from 'styled-components';
+import {Link} from 'react-scroll';
 
 function Header() {
   const [opennav, setOpenNav] = useState(false);
@@ -15,7 +16,9 @@ function Header() {
     <>
       <HeaderStyle opennav={opennav}>
         <div className='logo'>
-          <h3><FaCode /></h3>
+          <h3>
+             <Link to="hero" spy={true} smooth={true} offset={-110} duration={500}> <FaCode /></Link>
+            </h3>
           <div className='navIcon' onClick={() => setOpenNav(!opennav)}>
             {opennav ? <AiOutlineClose /> : <AiOutlineMenu />}
           </div>
@@ -23,9 +26,21 @@ function Header() {
 
         <div className='navigation'>
           <ul>
-            <li>Service</li>
-            <li>Works</li>
-            <li>Contact</li>
+            <li>
+              <Link  onClick = {
+              () => setOpenNav(false)
+            }  to="service" spy={true} smooth={true} offset={0} duration={500}>Service</Link>
+             </li>
+           <li>
+               <Link onClick = {
+             () => setOpenNav(false)
+           }  to="works" spy={true} smooth={true} offset={0} duration={500}>Works</Link>
+            </li>
+             <li>
+               <Link onClick = {
+               () => setOpenNav(false)
+             }  to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
+            </li>
           </ul>
         </div>
       </HeaderStyle>
@@ -38,7 +53,6 @@ export default Header;
 export const HeaderStyle = styled.div`
   display: flex;
   flex-direction: column;
-  /* background-color: #fff; */
   position: fixed;
   left: 0;
   right: 0;

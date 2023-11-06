@@ -27,11 +27,24 @@ function About() {
           duration: 1000
       })
   }, [])
+
+
+   const handleDownload = () => {
+       // Define the path to your CV file
+       const cvFilePath = './cv.pdf'; // Update the path accordingly
+
+       // Create a temporary anchor element to trigger the download
+       const link = document.createElement('a');
+       link.href = cvFilePath;
+       link.download = './cv.pdf'; // Set the desired download filename
+       link.click();
+   };
+
   return (
     <>
     <AboutStyle data-aos = "fade-up" >
             <h1>About me</h1>
-            <h2>Full stack software Developer<br/>Based in Addis Ababa, Ethiopia</h2>
+            <h2>Hello, I'am Nathanim Tadele</h2>
             <p className='about'>I 'm a full-stack software developer with a passion for JavaScript and Python. My expertise spans front-end and back-end development, creating user-friendly interfaces, and building scalable server-side applications. 
                 I thrive on solving complex problems, embrace continuous learning, and collaborate effectively in team environments. Let's connect and explore how we can work together on exciting projects.</p>
             <div className='skills'>
@@ -61,7 +74,7 @@ function About() {
                 </div>
             </div>    
         <div className='cvBtn'>
-        <button>CV here</button>
+        <button onClick={handleDownload}>CV here</button>
         </div>
     </AboutStyle>
     </>

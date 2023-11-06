@@ -4,7 +4,6 @@ import styled from "styled-components";
 export const WorksStyle = styled.div`
     display: grid;
     padding: 2rem;
-    background-color: rgba(0,0,0,.01);
 
 
     .header{
@@ -55,8 +54,9 @@ export const WorksStyle = styled.div`
                     padding: .4rem .5rem;
                     border: none;
                     font-family: inherit;
-                    background-color: blue;
-                    color: #fff;
+                   border: 1px solid #eee;
+                   background-color: #fff;
+                    color: #333;
                     cursor: pointer;
 
                     &:hover{
@@ -69,8 +69,13 @@ export const WorksStyle = styled.div`
             }
 
             P{
-                font-size: .9rem;
+                font-size: .8rem;
                 color: rgba(0,0, 0,.6);
+            }
+
+            h2{
+                font-size: 1.2rem;
+                font-weight: 500;
             }
 
             >*{

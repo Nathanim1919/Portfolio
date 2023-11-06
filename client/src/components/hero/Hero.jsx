@@ -22,19 +22,10 @@ function Hero() {
     })
   }, [])
 
-   const handleDownload = () => {
-     // Define the path to your CV file
-     const cvFilePath = './cv.pdf'; // Update the path accordingly
-
-     // Create a temporary anchor element to trigger the download
-     const link = document.createElement('a');
-     link.href = cvFilePath;
-     link.download = './cv.pdf'; // Set the desired download filename
-     link.click();
-   };
+  
   return (
     <>
-    <HeroStyle >
+    <HeroStyle id='hero'>
         <div className='hero-text' data-aos="fade-right">
           <h3>Hello, I'm a</h3>
             <h1>Software<br/>Engineer.</h1>
@@ -44,7 +35,7 @@ function Hero() {
                 <AiFillGithub/>
             </div>
             <div>
-              <button onClick={handleDownload}>Hire me</button>
+              <button>Hire me</button>
             </div>
         </div>
         <div className='Image' data-aos="fade-left">

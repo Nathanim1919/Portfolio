@@ -30,7 +30,7 @@ export const AboutStyle= styled.div`
 
     .cvBtn{
         button{
-            padding:.4rem 1rem;
+            padding:.3rem .5rem;
             background-color: blue;
             color: #fff;
             font-weight: inherit;
@@ -39,7 +39,7 @@ export const AboutStyle= styled.div`
             box-shadow: 0 7px 14px rgba(0,0,0,.25);
             border-radius: 4px;
             cursor: pointer;
-            font-size: 1.3rem;
+            font-size: 1rem;
             &:hover{
                 opacity: .5;
             }
