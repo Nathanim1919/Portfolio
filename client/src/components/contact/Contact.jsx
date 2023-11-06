@@ -1,12 +1,20 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 
 function Contact() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+
+    useEffect(() => {
+        Aos.init({
+            duration: 1000
+        })
+    }, [])
 
   const handleForm = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
@@ -27,7 +35,7 @@ function Contact() {
   }
 
   return (
-    <ContactStyle id='contact'>
+    <ContactStyle id='contact' data-aos="fade-up">
       <h1>Contact Me</h1>
       <p>Feel free to contact me any time. I will get back to you as soon as I can!</p>
       <form onSubmit={(e)=>handleForm(e)}>
