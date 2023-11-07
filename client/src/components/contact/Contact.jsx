@@ -5,7 +5,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 
-function Contact() {
+function Contact({setSendMsg, setSucces}) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -18,17 +18,26 @@ function Contact() {
 
   const handleForm = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
-
+    setSendMsg(true)
     try {
-      const sendForm = await axios.post('/send', {
+      const sendForm = await axios.post('http://localhost:3000/send', {
         name,
         email,
         message,
       });
 
+      console.log(sendForm);
+
       setName('');
       setEmail('');
       setMessage('');
+      setSendMsg(false)
+      setSucces(true)
+
+      // setTimeout(() => {
+      //   setSucces(false);
+      //   setSendMsg(false);
+      // }, 5000);
     } catch (error) {
       console.log(error);
     }

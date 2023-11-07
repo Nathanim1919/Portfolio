@@ -6,8 +6,12 @@ import About from './components/about/About'
 import Works from './components/works/Works'
 import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
+import Success from './components/success/Success'
 
 function App() {
+
+  const [sendMsg, setSendMsg] = useState(false);
+  const [success, setSucces] = useState(false);
   return (
     <>
       <div>
@@ -18,7 +22,8 @@ function App() {
         <Services/>
         <About/>
         <Works/>
-        <Contact/>
+        <Success setSendMsg={setSendMsg} setSucces={setSucces} sendMsg={sendMsg} success = {success}/>
+        <Contact setSendMsg={setSendMsg}setSucces={setSucces}/>
        </div>
     </>
   )

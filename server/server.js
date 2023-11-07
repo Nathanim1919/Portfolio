@@ -1,6 +1,7 @@
 const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 
 const app = express();
 
@@ -8,16 +9,23 @@ const app = express();
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cors({
+    origin: 'http://localhost:5173',
+}))
 
 
 // Create a transport object for sending emails
 const transporter = nodemailer.createTransport({
-    service: 'Gmail',
+   host: 'smtp.gmail.com',
+    port: 465,
+    secure: true,
     auth: {
         user: 'nathanim2tadele@gmail.com',
-        pass: '@nathanim1919' // Replace 'your_password' with your actual Gmail password
-    }
+        pass: 'bgmq wqao higg aneo' // Replace 'your_password' with your actual Gmail password
+    },
+    tls : { rejectUnauthorized: false }
 });
+
 
 
 // Define a route to handle form submissions
@@ -48,6 +56,6 @@ app.post('/send', (req, res) => {
     });
 });
 
-app.listen(5173, () => {
+app.listen(3000, () => {
     console.log(`Server is running on port 5000`);
 });
