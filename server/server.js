@@ -2,6 +2,8 @@ const express = require('express');
 const nodemailer = require('nodemailer');
 const bodyParser = require('body-parser');
 const cors = require('cors')
+const env = require('dotenv').config();
+
 
 const app = express();
 
@@ -13,15 +15,18 @@ app.use(cors({
     origin: 'http://localhost:5173',
 }))
 
+const port = process.env.PORT || 3000;
+const password = process.env.PASSWORD
+
 
 // Create a transport object for sending emails
 const transporter = nodemailer.createTransport({
-   host: 'smtp.gmail.com',
+    host: 'smtp.gmail.com',
     port: 465,
     secure: true,
     auth: {
         user: 'nathanim2tadele@gmail.com',
-        pass: 'bgmq wqao higg aneo' // Replace 'your_password' with your actual Gmail password
+        pass: `${password}`
     },
     tls : { rejectUnauthorized: false }
 });
@@ -56,6 +61,6 @@ app.post('/send', (req, res) => {
     });
 });
 
-app.listen(3000, () => {
-    console.log(`Server is running on port 5000`);
+app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
 });

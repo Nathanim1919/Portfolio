@@ -14,6 +14,7 @@ import {
 } from 'react-icons/ai'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import { Link } from 'react-scroll'
 
 function Hero() {
   useEffect(() => {
@@ -35,7 +36,9 @@ function Hero() {
                 <AiFillGithub/>
             </div>
             <div>
-              <button>Hire me</button>
+              <button>
+                <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>Hire me.</Link>
+              </button>
             </div>
         </div>
         <div className='Image' data-aos="fade-left">
