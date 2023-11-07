@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import styled from 'styled-components'
 import {
     MdOutlineDoneOutline
@@ -7,9 +7,15 @@ import {
 import {
     AiOutlineCloseCircle
 } from 'react-icons/ai'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function Success({sendMsg, success,setSucces, setSendMsg}) {
-
+    useEffect(() => {
+        Aos.init({
+            duration: 3000
+        })
+    }, [])
 
     const closeMsg =()=>{
         setSucces(false);
@@ -19,10 +25,10 @@ function Success({sendMsg, success,setSucces, setSendMsg}) {
     if (sendMsg || success){
         return (
           <SuccessHeader>
-              {!success && <div className='Loader'>
+              {!success && <div data-aos="zoom-in" className='Loader'>
                   <h1>Loading...</h1>
               </div>}
-             {success && <div className='successMsg'>
+             {success && <div data-aos="zoom-in" className='successMsg'>
                   <div onClick={closeMsg} className='close-icon'>
                     < AiOutlineCloseCircle/>
                   </div>
