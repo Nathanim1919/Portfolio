@@ -15,6 +15,7 @@ import {
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 import { Link } from 'react-scroll'
+import { NavLink } from 'react-router-dom'
 
 function Hero() {
   useEffect(() => {
@@ -31,9 +32,21 @@ function Hero() {
           <h3>Hello, I'm a</h3>
             <h1>Software<br/>Engineer.</h1>
             <div className='social'>
+                <NavLink  to = {
+                  'https://www.instagram.com/na_tha_n_19/'
+                } target='_blank'>
                 <AiFillInstagram/>
+                </NavLink>
+                <NavLink to = {
+                  'https://www.linkedin.com/in/nathanim-tadele-762099247/'
+                } target='_blank' >
                 <AiFillLinkedin/>
+                </NavLink>
+                <NavLink to = {
+                  'https://github.com/Nathanim1919/'
+                } target='_blank' >
                 <AiFillGithub/>
+                </NavLink>
             </div>
             <div>
               <button>

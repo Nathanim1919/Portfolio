@@ -12,6 +12,7 @@ import {
     FaReact,
     FaPython
 } from 'react-icons/fa'
+import {NavLink} from 'react-router-dom'
 
 import {
     BiLogoMongodb,
@@ -38,8 +39,9 @@ function Works() {
         <div className='header'>
             <h2>My Latest projects</h2>
             <div>
-                <p>See All</p>
-                <AiFillGithub/>
+                <NavLink to='https://github.com/Nathanim1919/' target="_blank">See All
+                 <AiFillGithub/>
+                </NavLink>
             </div>
         </div>
 
@@ -57,8 +59,8 @@ function Works() {
                         <BiLogoMongodb/>
                     </div>
                     <div>
-                        <button>Live Demo</button>
-                        <button>Source code</button>
+                        <NavLink to={'https://github.com/Nathanim1919/social-media-backend'} target="_blank">Live Demo</NavLink>
+                        <NavLink to={'https://github.com/Nathanim1919/social-media-frontend'} target="_blank"> Source code </NavLink>
                     </div>
                 </div>
             </div>
@@ -75,8 +77,8 @@ function Works() {
                         <BiLogoMongodb/>
                     </div>
                     <div>
-                        <button>Live Demo</button>
-                        <button>Source code</button>
+                        <NavLink to={'https://github.com/Nathanim1919/Project-Hive'} traget="_blank">Live Demo</NavLink>
+                        <NavLink to={'https://github.com/Nathanim1919/Project-Hive'} traget="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>
@@ -91,8 +93,8 @@ function Works() {
                         <FaReact/>
                     </div>
                     <div>
-                        <button>Live Demo</button>
-                        <button>Source code</button>
+                        <NavLink to={"https://github.com/Nathanim1919/E-learning"} target="_blank">Live Demo</NavLink>
+                        <NavLink to={"https://github.com/Nathanim1919/E-learning"} target="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>
@@ -108,8 +110,8 @@ function Works() {
                        <DiJavascript1/>
                     </div>
                     <div>
-                        <button>Live Demo</button>
-                        <button>Source code</button>
+                        <NavLink to={"https://github.com/Nathanim1919/movie-app"} target="_blank">Live Demo</NavLink>
+                        <NavLink to={"https://github.com/Nathanim1919/movie-app"} target="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>

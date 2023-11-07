@@ -35,10 +35,11 @@ function Success({sendMsg, success,setSucces, setSendMsg}) {
                   <div className='icon'>
                       < MdOutlineDoneOutline/>
                   </div>
-                  <div className='text'>
-                      <h2>Thank You</h2>
-                      <p>I'll contact you back as soon as i can.</p>
-                  </div>
+                 <div className='text'>
+                    <h2>Message Received</h2>
+                    <p>Thank you for getting in touch. I've received your message and will respond to you as soon as possible.</p>
+                </div>
+
               </div>}
           </SuccessHeader>
         )
@@ -63,7 +64,8 @@ const SuccessHeader = styled.div`
 
     
     .successMsg{
-        display: flex;
+        display: grid;
+        grid-template-columns: .1fr .7fr;
         align-items: center;
         background-color: #89D57D;
         padding: 1rem;
@@ -71,6 +73,11 @@ const SuccessHeader = styled.div`
         border-radius: 10px;
         box-shadow: 0 7px 23px rgba(0,0,0,.073);
         position: relative;
+         width: 40vw;
+
+        @media screen and (max-width:700px){
+            width: 80vw;
+        }
 
         .close-icon{
             color: #fff;

@@ -12,14 +12,22 @@ export const WorksStyle = styled.div`
         align-items: center;
 
         >div{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: .7rem;
-            cursor: pointer;
-
-            &:hover{
-                opacity: .6;
+            a{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .7rem;
+                cursor: pointer;
+                background-color: #333;
+                color: #fff;
+                text-decoration: none;
+                font-size: 1rem;
+                padding: 0.2rem;
+                border-radius: 3px;
+    
+                &:hover{
+                    opacity: .6;
+                }
             }
         }
 
