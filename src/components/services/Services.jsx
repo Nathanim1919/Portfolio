@@ -75,9 +75,39 @@ const ServiceStyle = styled.div`
         align-items: center;
         width: 50%;
         margin: auto;
+        position: relative;
 
-          @media screen and (max-width:700px){
+        >*{
+            position: relative;
+            z-index: 3;
+        }
+
+        &::after{
+            position: absolute;
+            bottom: 1rem;
+            right: 0;
+            width: 50%;
+            height: 4rem;
+            border-radius: 50%;
+            background-color: #eee;
+            content: '';
+            transform: rotate(-20deg);
+        }
+
+          @media screen and (max-width:768px){
                 width: 90%;
+
+                 &::after{
+                    position: absolute;
+                    bottom: 1rem;
+                    right: 0;
+                    width: 80%;
+                    height: 4rem;
+                    border-radius: 50%;
+                    background-color: #eee;
+                    content: '';
+                    transform: rotate(-20deg);
+        }
             }
 
         >*{
@@ -104,13 +134,26 @@ const ServiceStyle = styled.div`
        gap: 1rem;
        width: 75%;
        margin:3rem auto;
+       position: relative;
+       padding: 3rem;
 
        &::after{
           content: '';
-          background-color:red;
+          background-color:#eee;
           width: 40%;
-          height: 40%;
+          height: 60%;
+          position: absolute;
+          bottom: -3rem;
+       }
 
+       &::before{
+          content: '';
+          background-color:#eee;
+          width: 40%;
+          height: 60%;
+          position: absolute;
+          bottom: -3rem;
+          right: 0;
        }
 
        >div{
@@ -123,6 +166,7 @@ const ServiceStyle = styled.div`
         border-left: 10px solid #333;
         background-color:#fff;
         position: relative;
+        z-index: 3;
         overflow: hidden;
         border:1px solid #eee;
         cursor: pointer;
@@ -187,5 +231,23 @@ const ServiceStyle = styled.div`
         }
        }
         
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .services{
+            &::after{
+            width: 40%;
+            height: 10%;
+            bottom: 0rem;
+         }
+         
+         &::before{
+           content: '';
+            height: 10%;
+            position: absolute;
+            top: 0rem;
+         }
+        }
     }
 `
