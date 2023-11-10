@@ -98,11 +98,9 @@ const ContactStyle = styled.div`
 
 
     @media screen and (max-width:800px){
-        width: 90%;
-
-
+        width: 80%;
         form{
-            width: 80%;
+            width: 100%;
         }
     }
 `

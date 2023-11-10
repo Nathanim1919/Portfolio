@@ -17,7 +17,7 @@ function Header() {
       <HeaderStyle opennav={opennav}>
         <div className='logo'>
           <h3>
-             <Link to="hero" spy={true} smooth={true} offset={-110} duration={500}> <FaCode /></Link>
+             <Link to="hero" spy={true} smooth={true} offset={-150} duration={500}> <FaCode /></Link>
             </h3>
           <div className='navIcon' onClick={() => setOpenNav(!opennav)}>
             {opennav ? <AiOutlineClose /> : <AiOutlineMenu />}
@@ -29,17 +29,17 @@ function Header() {
             <li>
               <Link  onClick = {
               () => setOpenNav(false)
-            }  to="service" spy={true} smooth={true} offset={0} duration={500}>Service</Link>
+            }  to="service" spy={true} smooth={true} offset={-40} duration={500}>Service</Link>
              </li>
            <li>
                <Link onClick = {
              () => setOpenNav(false)
-           }  to="works" spy={true} smooth={true} offset={0} duration={500}>Works</Link>
+           }  to="works" spy={true} smooth={true} offset={-60} duration={500}>Works</Link>
             </li>
              <li>
                <Link onClick = {
                () => setOpenNav(false)
-             }  to="contact" spy={true} smooth={true} offset={0} duration={500}>Contact</Link>
+             }  to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact</Link>
             </li>
           </ul>
         </div>
@@ -68,7 +68,8 @@ export const HeaderStyle = styled.div`
     padding: 0rem 1rem;
     font-size: 1.4rem;
     position: relative;
-    z-index: 20;
+    z-index: 16;
+    backdrop-filter: blur(5px);
     > * {
       cursor: pointer;
     }
@@ -77,18 +78,18 @@ export const HeaderStyle = styled.div`
   > div:nth-child(2) {
     background-color:${props => (props.opennav ? '#fff' : 'transparent')};;
     position: fixed;
-    padding: 3rem 1rem;
+    padding: 4rem 0rem;
     top: ${props => (props.opennav ? '0' : '-100rem')};
     left: 0;
     right: 0;
     z-index: 10;
     transition: all .3s ease-in-out;
     ul {
-      align-self: center;
+      /* align-self: center; */
       display: flex;
       flex-direction: column;
       list-style-type: none;
-      justify-content: space-around;
+      justify-content: flex-start;
       align-items: center;
       gap: 2rem;
 
@@ -115,6 +116,10 @@ export const HeaderStyle = styled.div`
   @media(min-width: 768px){
      flex-direction: row;
      justify-content: space-around;
+
+     .logo{
+       backdrop-filter: blur(0px);
+     }
      
      .navIcon{
       display: none;

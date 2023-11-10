@@ -8,7 +8,7 @@ export const HeroStyle = styled.div`
         position: relative;
         z-index: 1;
         background-color: transparent;
-        /* overflow: hidden; */
+        overflow: hidden;
 
         ::before{
             content: '';

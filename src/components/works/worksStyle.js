@@ -11,6 +11,10 @@ export const WorksStyle = styled.div`
         justify-content: space-between;
         align-items: center;
 
+        h2{
+            font-size: 1rem;
+        }
+
         >div{
             a{
                 display: flex;
@@ -21,7 +25,7 @@ export const WorksStyle = styled.div`
                 background-color: #333;
                 color: #fff;
                 text-decoration: none;
-                font-size: 1rem;
+                font-size: .8rem;
                 padding: 0.2rem;
                 border-radius: 3px;
     
