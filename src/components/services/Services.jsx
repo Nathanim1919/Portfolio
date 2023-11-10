@@ -29,29 +29,32 @@ useEffect(() => {
     </div>
 
 
-     <div className='services'>
-        <div data-aos = "fade-up" >
-            <div>
-                <SiSimilarweb/>
-            </div>
-            <h2>Front-end Development</h2>
-            <p>I specialize in crafting engaging and visually appealing user interfaces for websites, ensuring a seamless and interactive experience for your audience.</p>
+    <div className='services'>
+    <div data-aos="fade-up">
+        <div>
+            <SiSimilarweb />
         </div>
-        <div data-aos = "fade-up" >
-            <div>
-                <AiFillRobot/>
-            </div>
-            <h2>Back-end Development</h2>
-             <p>With a focus on server-side logic and database management, I excel in building robust and scalable back-end systems to power your web applications.</p>
-        </div>
-        <div data-aos = "fade-up" >
-            <div>
-                <AiFillApple/>
-            </div>
-            <h2>App Development</h2>
-            <p>I have extensive experience in designing and developing mobile applications that deliver seamless experiences on various platforms.</p>
-        </div>
+        <h2>Front-end Development</h2>
+        <p>I specialize in crafting engaging and visually appealing user interfaces for websites, ensuring a seamless and interactive experience for your audience. Technologies: ReactJS, Redux.</p>
     </div>
+
+    <div data-aos="fade-up">
+        <div>
+            <AiFillRobot />
+        </div>
+        <h2>Back-end Development</h2>
+        <p>With a focus on server-side logic and database management, I excel in building robust and scalable back-end systems to power your web applications. Technologies: Node.js, MongoDB, SQLDB, Django, Flask.</p>
+    </div>
+
+    <div data-aos="fade-up">
+        <div>
+            <AiFillApple />
+        </div>
+        <h2>App Development</h2>
+        <p>I have extensive experience in designing and developing mobile applications that deliver seamless experiences on various platforms. Technologies: React Native.</p>
+    </div>
+</div>
+
 
     </ServiceStyle>
   );
@@ -96,10 +99,19 @@ const ServiceStyle = styled.div`
 
     }
     .services{
-        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-       margin-top: 3rem;
-       gap: 2rem;
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+       gap: 1rem;
+       width: 75%;
+       margin:3rem auto;
+
+       &::after{
+          content: '';
+          background-color:red;
+          width: 40%;
+          height: 40%;
+
+       }
 
        >div{
         display: flex;
@@ -112,7 +124,7 @@ const ServiceStyle = styled.div`
         background-color:#fff;
         position: relative;
         overflow: hidden;
-        border:1px solid #333;
+        border:1px solid #eee;
         cursor: pointer;
 
         >*{
@@ -126,7 +138,8 @@ const ServiceStyle = styled.div`
          }
 
         &:hover::after{
-            width: 100%;height: 100%;
+            width: 100%;
+            height: 100%;
             border-radius: 0;
         }
 
@@ -134,8 +147,8 @@ const ServiceStyle = styled.div`
             position: absolute;
             top: 0;
             left: 0;
-            width: 24%;
-            height: 34%;
+            width: 27%;
+            height: 30%;
             background-color: #333;
             content: '';
             border-bottom-right-radius: 90%;
@@ -170,6 +183,7 @@ const ServiceStyle = styled.div`
 
         p{
             color: #868382;
+            font-size: .8rem;
         }
        }
         
