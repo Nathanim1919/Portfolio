@@ -144,6 +144,7 @@ const ServiceStyle = styled.div`
           height: 60%;
           position: absolute;
           bottom: -3rem;
+          border-bottom-right-radius: 30px;
        }
 
        &::before{
@@ -154,6 +155,7 @@ const ServiceStyle = styled.div`
           position: absolute;
           bottom: -3rem;
           right: 0;
+          border-bottom-left-radius: 30px;
        }
 
        >div{

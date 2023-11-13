@@ -93,7 +93,7 @@ function Works() {
                         <FaReact/>
                     </div>
                     <div>
-                        <NavLink to={"https://github.com/Nathanim1919/E-learning"} target="_blank">Live Demo</NavLink>
+                        <NavLink to={"https://nathanim1919.github.io/E-learning/"} target="_blank">Live Demo</NavLink>
                         <NavLink to={"https://github.com/Nathanim1919/E-learning"} target="_blank">Source code</NavLink>
                     </div>
                 </div>

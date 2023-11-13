@@ -40,6 +40,7 @@ export const WorksStyle = styled.div`
         display: grid;
         grid-template-columns: 1fr;
         gap: 3rem;
+        margin-top: 3rem;
 
         .project {
            display :flex;
@@ -98,12 +99,23 @@ export const WorksStyle = styled.div`
            .image{
             padding: 1rem;
             background-color: #fff;
+            &::after{
+                position: absolute;
+                content: '';
+                width: 40%;
+                height: 50%;
+                background-color: #eee;
+                top: -2rem;
+                left: -2rem;
+            }
            }
 
            img{
-            box-shadow: 0 9px 23px rgba(0,0,0,.07);
+            box-shadow: 0 19px 33px rgba(0,0,0,.07);
             width: 100%;
             height: 100%;
+            position: relative;
+            z-index: 5;
            }
         }
     }
