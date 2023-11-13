@@ -42,11 +42,8 @@ function About() {
 
   return (
     <>
-    <AboutStyle data-aos = "fade-up" >
-            <h1>About me</h1>
-            <h2>Hello, I'am Nathanim Tadele</h2>
-            <p className='about'>I 'm a full-stack software developer with a passion for JavaScript and Python. My expertise spans front-end and back-end development, creating user-friendly interfaces, and building scalable server-side applications. 
-                I thrive on solving complex problems, embrace continuous learning, and collaborate effectively in team environments. Let's connect and explore how we can work together on exciting projects.</p>
+    <AboutStyle>
+       
             <div className='skills'>
                 <div>
                     <DiJavascript1/>
@@ -72,10 +69,15 @@ function About() {
                 <div>
                     <DiMysql/>
                 </div>
-            </div>    
-        <div className='cvBtn'>
-        <button onClick={handleDownload}>CV here</button>
-        </div>
+            </div>  
+             <div>
+
+            <h1>About me</h1>
+            <h2>Hello, I'am Nathanim Tadele</h2>
+            <p className='about'>I 'm a full-stack software developer with a passion for JavaScript and Python. My expertise spans front-end and back-end development, creating user-friendly interfaces, and building scalable server-side applications. 
+                I thrive on solving complex problems, embrace continuous learning, and collaborate effectively in team environments. Let's connect and explore how we can work together on exciting projects.</p>
+ <button onClick={handleDownload}>CV here</button>
+        </div>  
     </AboutStyle>
     </>
   )

@@ -19,8 +19,8 @@ function App() {
         <Header/>
         <Hero/>
         </div>
-        <Services/>
         <About/>
+        <Services/>
         <Works/>
         <Success setSendMsg={setSendMsg} setSucces={setSucces} sendMsg={sendMsg} success = {success}/>
         <Contact setSendMsg={setSendMsg}setSucces={setSucces}/>

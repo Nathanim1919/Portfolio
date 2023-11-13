@@ -70,6 +70,7 @@ export const HeaderStyle = styled.div`
     position: relative;
     z-index: 16;
     backdrop-filter: blur(5px);
+    color: #fff;
     > * {
       cursor: pointer;
     }
@@ -98,6 +99,7 @@ export const HeaderStyle = styled.div`
         font-size: 1.2rem;
         cursor: pointer;
         padding: 1rem .5rem;
+        color: #eee;
 
         &:hover{
           color: orange;

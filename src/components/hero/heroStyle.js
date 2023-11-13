@@ -3,14 +3,15 @@ import styled from "styled-components";
 export const HeroStyle = styled.div`
         display: grid;
         place-items: center;
-        margin-top: 5rem;
+        margin-top: 7rem;
         width: 100%;
         position: relative;
         z-index: 1;
         background-color: transparent;
         overflow: hidden;
 
-        ::before{
+
+        &::before{
             content: '';
             position: absolute;
             top: 35%;
@@ -32,6 +33,29 @@ export const HeroStyle = styled.div`
             >*{
                 margin: 0;
             }
+              h3{
+                    font-size: 1.2rem;
+                    color: #eee;
+                    font-weight: 200;
+                }
+                h1{
+                    font-size: 3rem;
+                    line-height: 45px;
+                    color: #fff;
+                    letter-spacing: 5px;
+                    position: relative;
+
+                    &::after{
+                        content: '';
+                        position: absolute;
+                        bottom: -.5rem;
+                        left: 0;
+                        width: 20%;
+                        height: 10px;
+                        background-color: orange;
+                    }
+                }
+        
 
             .social{
                 display: flex;
@@ -39,9 +63,11 @@ export const HeroStyle = styled.div`
                 align-items: center;
                 font-size: 1.4rem;
                 gap: 2rem;
+                color: #eee;
 
                 >*{
                     cursor: pointer;
+                    color: #eee;
 
                     &:hover{
                         color: blue;
@@ -52,10 +78,10 @@ export const HeroStyle = styled.div`
             button{
                 padding: .3rem 1rem;
                 border: none;
-                background-color: blue;
-                color: #fff;
+                background-color: #fff;
+                color: #333;
                 outline: none;
-                border: 2px solid blue;
+                border: none;
                 cursor: pointer;
                 font-weight: 800;
                 border-radius: 4px;
@@ -67,20 +93,19 @@ export const HeroStyle = styled.div`
                 }
             }
         }
-
-
         .Image{
             position: relative;
             display: grid;
             place-items: center;
-            padding-bottom:0rem;
-            overflow: hidden;
+            padding:4rem;
+            top: 16%;
+            
             >div{
-                /* background-color:orange; */
+                background-color:orange;
                 width: 20rem;
                 height: 20rem;
                 border-radius: 50%;
-                top: 20%;
+                top: 6%;
                 position: relative;
 
                  >div{
@@ -97,14 +122,20 @@ export const HeroStyle = styled.div`
                 .react{
                     top: 10%;
                     left: 13%;
+                    animation: animate 1s alternate infinite;
+                    animation-delay: 100ms;
                 }
                 .python{
                     top: 10%;
                     right: 13%;
+                     animation: animate 1s alternate infinite;
+                      animation-delay: 500ms;
                 }
                 .node{
                     bottom: 30%;
-                    right: 0;
+                    right: 1rem;
+                     animation: animate 1s alternate infinite;
+                      animation-delay: 1000ms;
                 }
             }
 
@@ -113,6 +144,15 @@ export const HeroStyle = styled.div`
                 transform: scale(1.5);
                 position: absolute;
                 top: -30%;
+            }
+        }
+
+        @keyframes animate {
+            0%{
+                transform: translateY(10px);
+            }
+            100%{
+                transform: translateY(-10px);
             }
         }
 
@@ -125,46 +165,26 @@ export const HeroStyle = styled.div`
             width: 70%;
             margin:4rem auto;
 
-            .hero-text{
-                h3{
-                    font-size: 1.2rem;
-                }
-                h1{
-                    font-size: 3rem;
-                    line-height: 45px;
-                    color: orangered;
-                    letter-spacing: 5px;
-                    position: relative;
-
-                    &::after{
-                        content: '';
-                        position: absolute;
-                        bottom: -.5rem;
-                        left: 0;
-                        width: 20%;
-                        height: 10px;
-                        background-color: orange;
-                    }
-                }
-            }
+              
              .Image{
-            padding-bottom: 3rem;
             overflow: hidden;
             padding: 3rem 0;
 
             >div{
-                width: 30rem;
-                height: 30rem;
+                width: 28rem;
+                height: 28rem;
+             
                 position: relative; 
             }
 
             img{
                 width: 100%;
-                transform: scale(1.5);
+                transform: scale(1.4);
                 position: absolute;
-                top: -30%;
+                top: -31%;
             }
         }
 
         }
+    
 `
