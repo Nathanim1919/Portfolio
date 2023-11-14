@@ -12,7 +12,12 @@ body {
   display: grid;
   place-items: center;
   width: 100vw;
-  background-color: rgb(42, 42, 72);
+  background-color: rgb(34, 32, 32);
+}
+
+body>*{
+  position:relative;
+  z-index:5;
 }
 
 body::after {
@@ -22,10 +27,10 @@ body::after {
   width: 10rem;
   left: 15%;
   height: 10rem;
-  background-color: rgba(45, 39, 77, 0.487);
+  background-color: rgba(31, 28, 44, 0.487);
   border-radius: 50%;
   z-index: 1;
-  box-shadow:inset 0 23px 30px rgba(139, 253, 255, 0.393), 0 23px 30px rgba(139, 253, 255, 0.22);
+  box-shadow:inset 0 23px 30px rgba(59, 120, 121, 0.393), 0 23px 30px rgba(40, 81, 82, 0.22);
 }
 body::before {
   content: "";

@@ -4,7 +4,7 @@ export const HeroStyle = styled.div`
         display: grid;
         place-items: center;
         margin-top: 7rem;
-        width: 100%;
+        width: 100vw;
         position: relative;
         z-index: 3;
         background-color: transparent;
@@ -98,7 +98,7 @@ export const HeroStyle = styled.div`
             display: grid;
             place-items: center;
             padding:4rem;
-            top: 16%;
+            top: 0%;
             
             >div{
                 background-color:orange;

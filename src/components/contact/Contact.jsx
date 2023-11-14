@@ -102,7 +102,7 @@ const ContactStyle = styled.div`
 
 
     @media screen and (max-width:800px){
-        width: 80%;
+        width: 70vw;
         form{
             width: 100%;
         }

@@ -71,6 +71,7 @@ const ServiceStyle = styled.div`
     background-color:rgba(0,0,0,.4);
     position:relative;
     overflow:hidden;
+    width:90vw;
 
      &::after{
           content: '';
@@ -96,6 +97,7 @@ const ServiceStyle = styled.div`
         >*{
             position: relative;
             z-index: 3;
+            margin:0;
         }
 
         &::after{

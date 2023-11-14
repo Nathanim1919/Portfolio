@@ -8,10 +8,11 @@ export const AboutStyle= styled.div`
     background-color:rgba(0,0,0,.3);
     position: relative;
     top:-0rem;
-    padding:0rem 2rem;
+    padding:0rem;
     gap: 1rem;
     border: 1px solid orangered;
     backdrop-filter: blur(4px);
+    width:100vw;
     >div{
         /* background-color: rgba(34, 26, 97); */
         padding:1rem;

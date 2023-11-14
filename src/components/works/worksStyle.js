@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const WorksStyle = styled.div`
     display: grid;
     padding: 2rem;
-
+    width:80vw;
 
     .header{
         display: flex;
@@ -13,6 +13,7 @@ export const WorksStyle = styled.div`
 
         h2{
             font-size: 1rem;
+            color:#fff;
         }
 
         >div{
@@ -41,6 +42,7 @@ export const WorksStyle = styled.div`
         grid-template-columns: 1fr;
         gap: 1rem;
         margin-top: 3rem;
+        width:100%;
 
         .project {
            /* background-color:rgba(0,0,0,.4); */
@@ -104,7 +106,7 @@ export const WorksStyle = styled.div`
             }
 
             h2{
-                font-size: 1.2rem;
+                font-size: 1rem;
                 font-weight: 500;
                 background-color:orange;
                 padding:0 1rem;
