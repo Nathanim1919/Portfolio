@@ -39,10 +39,12 @@ export const WorksStyle = styled.div`
     .projects {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 3rem;
+        gap: 1rem;
         margin-top: 3rem;
 
         .project {
+           /* background-color:rgba(0,0,0,.4); */
+           padding:3rem;
            display :flex;
            justify-content: center;
            align-items: center;
@@ -54,6 +56,21 @@ export const WorksStyle = styled.div`
             flex-direction: column;
             align-items: center;
             gap: 1rem;
+            color:#fff;
+
+            >div:nth-child(4){
+                display:flex;
+                align-items:center;
+
+                >*{
+                    color:#fff;
+                    font-size:.9rem;
+                    text-decoration:none;
+                    background-color:#fff;
+                    color:#333;
+                    padding:.1rem .5rem;
+                }
+            }
 
             >div{
                 display: flex;
@@ -83,12 +100,14 @@ export const WorksStyle = styled.div`
 
             P{
                 font-size: .8rem;
-                color: rgba(0,0, 0,.6);
+                color: #eee;
             }
 
             h2{
                 font-size: 1.2rem;
                 font-weight: 500;
+                background-color:orange;
+                padding:0 1rem;
             }
 
             >*{
@@ -99,15 +118,15 @@ export const WorksStyle = styled.div`
            .image{
             padding: 1rem;
             background-color: #fff;
-            &::after{
+            /* &::after{
                 position: absolute;
                 content: '';
                 width: 40%;
                 height: 50%;
-                background-color: #eee;
+                background-color: #333;
                 top: -2rem;
                 left: -2rem;
-            }
+            } */
            }
 
            img{

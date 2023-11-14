@@ -25,29 +25,24 @@ function Contact({setSendMsg, setSucces}) {
         email,
         message,
       });
-
-      console.log(sendForm);
-
       setName('');
       setEmail('');
       setMessage('');
       setSendMsg(false)
       setSucces(true)
-
-      // setTimeout(() => {
-      //   setSucces(false);
-      //   setSendMsg(false);
-      // }, 5000);
     } catch (error) {
       console.log(error);
     }
   }
 
   return (
-    <ContactStyle id='contact' data-aos="fade-up">
-      <h1>Contact Me</h1>
-      <p>Feel free to contact me any time. I will get back to you as soon as I can!</p>
-      <form onSubmit={(e)=>handleForm(e)}>
+    <ContactStyle id='contact'>
+      <h1  data-aos="fade-up">Contact Me</h1>
+      <p  data-aos="fade-up">Feel free to contact me any time. I will get back to you as soon as I can!</p>
+      <form form data-aos = "zoom-in"
+      onSubmit = {
+        (e) => handleForm(e)
+      } >
         <input value={name} required onChange={(e) => setName(e.target.value)} type="text" placeholder="Name" />
         <input value={email} required onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" />
         <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" placeholder="Message" />
@@ -67,7 +62,9 @@ const ContactStyle = styled.div`
     place-items: center;
     padding: 3rem;
     width: 70%;
-    margin: auto;
+    background-color:rgba(0,0,0,.4);
+    margin:3rem auto;
+    color:#fff;
 
     form{
         display: flex;
@@ -79,7 +76,7 @@ const ContactStyle = styled.div`
         input{
             padding:1rem;
             border: none;
-            color: #333;
+            color: #fff;
             border-bottom: 1px solid #CDC8C6;
             background-color: transparent;
             outline: none;
@@ -87,12 +84,19 @@ const ContactStyle = styled.div`
 
         button{
             padding: 0.6rem 1rem;
-            background-color: #333;
-            color: #CDC8C6;
+            background-color: #fff;
+            color: #333;
             border: none;
             font-weight: bolder;
             font-size: 1rem;
             cursor: pointer;
+            border:2px solid transparent;
+
+            &:hover{
+              background-color:transparent;
+              border:2px solid #fff;
+              color:#fff;
+            }
         }
     }
 

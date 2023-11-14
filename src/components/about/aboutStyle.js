@@ -5,16 +5,16 @@ export const AboutStyle= styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color: rgba(34, 26, 84);
+    background-color:rgba(0,0,0,.3);
     position: relative;
     top:-0rem;
     padding:0rem 2rem;
     gap: 1rem;
-    border: 2px solid orangered;
+    border: 1px solid orangered;
+    backdrop-filter: blur(4px);
     >div{
         /* background-color: rgba(34, 26, 97); */
         padding:1rem;
-        backdrop-filter: blur(4px);
         position: relative;
         z-index: 0;
     }

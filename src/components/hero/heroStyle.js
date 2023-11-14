@@ -6,7 +6,7 @@ export const HeroStyle = styled.div`
         margin-top: 7rem;
         width: 100%;
         position: relative;
-        z-index: 1;
+        z-index: 3;
         background-color: transparent;
         overflow: hidden;
 

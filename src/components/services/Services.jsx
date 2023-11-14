@@ -30,7 +30,7 @@ useEffect(() => {
 
 
     <div className='services'>
-    <div data-aos="fade-up">
+    <div data-aos="zoom-in">
         <div>
             <SiSimilarweb />
         </div>
@@ -38,7 +38,7 @@ useEffect(() => {
         <p>I specialize in crafting engaging and visually appealing user interfaces for websites, ensuring a seamless and interactive experience for your audience. Technologies: ReactJS, Redux.</p>
     </div>
 
-    <div data-aos="fade-up">
+    <div data-aos="zoom-in">
         <div>
             <AiFillRobot />
         </div>
@@ -46,7 +46,7 @@ useEffect(() => {
         <p>With a focus on server-side logic and database management, I excel in building robust and scalable back-end systems to power your web applications. Technologies: Node.js, MongoDB, SQLDB, Django, Flask.</p>
     </div>
 
-    <div data-aos="fade-up">
+    <div data-aos="zoom-in">
         <div>
             <AiFillApple />
         </div>
@@ -67,7 +67,21 @@ export default Services;
 const ServiceStyle = styled.div`
     display: grid;
     place-items: center;
-    padding: 3rem 1rem;
+    padding: 0rem 1rem;
+    background-color:rgba(0,0,0,.4);
+    position:relative;
+    overflow:hidden;
+
+     &::after{
+          content: '';
+          background-color:rgba(0,0,0,.2);
+          width: 30rem;
+          height: 30rem;
+          position: absolute;
+          top:6rem;
+          transform:rotate(45deg);
+          z-index:0;
+       }
 
     .header{
         display: flex;
@@ -76,6 +90,8 @@ const ServiceStyle = styled.div`
         width: 50%;
         margin: auto;
         position: relative;
+        overflow:hidden;
+        padding:2rem 0 0 0;
 
         >*{
             position: relative;
@@ -84,29 +100,18 @@ const ServiceStyle = styled.div`
 
         &::after{
             position: absolute;
-            bottom: 1rem;
+            top: -5rem;
             right: 0;
-            width: 50%;
-            height: 4rem;
+            width: 10rem;
+            height: 10rem;
             border-radius: 50%;
-            background-color: #eee;
+            background-color: orange;
             content: '';
-            transform: rotate(-20deg);
+
         }
 
           @media screen and (max-width:768px){
                 width: 90%;
-
-                 &::after{
-                    position: absolute;
-                    bottom: 1rem;
-                    right: 0;
-                    width: 80%;
-                    height: 4rem;
-                    border-radius: 50%;
-                    background-color: #eee;
-                    content: '';
-                    transform: rotate(-20deg);
         }
             }
 
@@ -121,10 +126,12 @@ const ServiceStyle = styled.div`
 
         h2{
             font-size: 1.3rem;
+            color:#fff;
         }
 
         p{
             text-align: center;
+            color: #eee;
         }
 
     }
@@ -137,17 +144,9 @@ const ServiceStyle = styled.div`
        position: relative;
        padding: 3rem;
 
-       &::after{
-          content: '';
-          background-color:#eee;
-          width: 40%;
-          height: 60%;
-          position: absolute;
-          bottom: -3rem;
-          border-bottom-right-radius: 30px;
-       }
+      
 
-       &::before{
+       /* &::before{
           content: '';
           background-color:#eee;
           width: 40%;
@@ -156,7 +155,7 @@ const ServiceStyle = styled.div`
           bottom: -3rem;
           right: 0;
           border-bottom-left-radius: 30px;
-       }
+       } */
 
        >div{
         display: flex;
@@ -166,20 +165,21 @@ const ServiceStyle = styled.div`
         gap: .6rem;
         border-radius: 10px;
         border-left: 10px solid #333;
-        background-color:#fff;
+        background-color:#2F2C3D;
         position: relative;
         z-index: 3;
         overflow: hidden;
-        border:1px solid #eee;
         cursor: pointer;
-
+        border:2px solid transparent;
+        
         >*{
             position: relative;
             z-index: 5;
         }
-
-         &:hover
-         {
+        
+        &:hover
+        {
+            border:2px solid orange;
             color:#fff;
          }
 
@@ -195,7 +195,7 @@ const ServiceStyle = styled.div`
             left: 0;
             width: 27%;
             height: 30%;
-            background-color: #333;
+            /* background-color: orange; */
             content: '';
             border-bottom-right-radius: 90%;
             transition: all .3s ease-in-out;
