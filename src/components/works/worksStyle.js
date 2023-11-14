@@ -3,12 +3,12 @@ import styled from "styled-components";
 
 export const WorksStyle = styled.div`
     display: grid;
-    padding: 2rem;
-    width:80vw;
+    padding:2rem 0rem;
+    width:100vw;
 
     .header{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
 
         h2{
@@ -42,7 +42,7 @@ export const WorksStyle = styled.div`
         grid-template-columns: 1fr;
         gap: 1rem;
         margin-top: 3rem;
-        width:100%;
+        width:100vw;
 
         .project {
            /* background-color:rgba(0,0,0,.4); */

@@ -85,6 +85,8 @@ export const HeaderStyle = styled.div`
     right: 0;
     z-index: 10;
     transition: all .3s ease-in-out;
+      background-color:#000;
+      color:#fff;
     ul {
       /* align-self: center; */
       display: flex;
