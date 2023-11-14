@@ -42,7 +42,6 @@ export const WorksStyle = styled.div`
         grid-template-columns: 1fr;
         gap: 1rem;
         margin-top: 3rem;
-        width:100vw;
 
         .project {
            /* background-color:rgba(0,0,0,.4); */

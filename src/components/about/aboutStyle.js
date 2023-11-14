@@ -10,22 +10,32 @@ export const AboutStyle= styled.div`
     top:-0rem;
     padding:0rem;
     gap: 1rem;
-    border: 1px solid orangered;
     backdrop-filter: blur(4px);
     width:100vw;
+
+    >div:nth-child(2){
+        display:flex;
+        flex-direction:column;
+        place-items:center;
+        width:80%;
+
+        >*{
+            margin:0;
+        }
+    }
     >div{
-        /* background-color: rgba(34, 26, 97); */
         padding:1rem;
         position: relative;
         z-index: 0;
     }
     h1{
         font-size: 1.4rem;
+        color:#fff;
     }
 
     h2{
         font-size: 1rem;
-        color: rgba(0,0,0,.8);
+        color: #eee;
     }
 
     p{
@@ -48,8 +58,8 @@ export const AboutStyle= styled.div`
             border-radius: 50%;
             display: grid;
             place-items: center;
-            background-color: orange;
-            color: #000;
+            /* background-color: orange; */
+            color: #eee;
          }
     }
 

@@ -133,6 +133,7 @@ export const HeaderStyle = styled.div`
           position: relative;
           padding: 0 1rem;
           top:0;
+          background-color:transparent;
     ul {
     flex-direction: row;
     align-items: center;

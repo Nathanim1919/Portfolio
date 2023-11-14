@@ -9,6 +9,7 @@ import {
 } from 'react-icons/ai'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import Loading from '../loader/Loading'
 
 function Success({sendMsg, success,setSucces, setSendMsg}) {
     useEffect(() => {
@@ -26,7 +27,7 @@ function Success({sendMsg, success,setSucces, setSendMsg}) {
         return (
           <SuccessHeader>
               {!success && <div data-aos="zoom-in" className='Loader'>
-                  <h1>Loading...</h1>
+                 <Loading/>
               </div>}
              {success && <div data-aos="zoom-in" className='successMsg'>
                   <div onClick={closeMsg} className='close-icon'>
@@ -51,7 +52,7 @@ export default Success;
 
 
 const SuccessHeader = styled.div`
-    background-color: rgba(255,255,255,.3);
+    background-color: rgba(0,0,0,.7);
     backdrop-filter: blur(6px);
     display: grid;
     place-items: center;

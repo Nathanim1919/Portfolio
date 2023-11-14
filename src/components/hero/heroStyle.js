@@ -169,6 +169,7 @@ export const HeroStyle = styled.div`
              .Image{
             overflow: hidden;
             padding: 3rem 0;
+            top:3%;
 
             >div{
                 width: 28rem;
