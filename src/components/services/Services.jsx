@@ -71,7 +71,7 @@ const ServiceStyle = styled.div`
     background-color:rgba(0,0,0,.4);
     position:relative;
     overflow:hidden;
-    width:90vw;
+    width:100vw;
 
      &::after{
           content: '';
@@ -146,33 +146,23 @@ const ServiceStyle = styled.div`
        position: relative;
        padding: 3rem;
 
-      
-
-       /* &::before{
-          content: '';
-          background-color:#eee;
-          width: 40%;
-          height: 60%;
-          position: absolute;
-          bottom: -3rem;
-          right: 0;
-          border-bottom-left-radius: 30px;
-       } */
 
        >div{
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        box-shadow: 0 9px 20px rgba(0,0,0,.061);
+        box-shadow: 0 9px 20px rgba(0,0,0,.071);
         gap: .6rem;
         border-radius: 10px;
         border-left: 10px solid #333;
-        background-color:#2F2C3D;
+        background-color:rgba(0,0,0,.021);
         position: relative;
         z-index: 3;
         overflow: hidden;
         cursor: pointer;
         border:2px solid transparent;
+        text-align: left;
+        border-left: 1px solid #fff;
         
         >*{
             position: relative;
@@ -185,25 +175,7 @@ const ServiceStyle = styled.div`
             color:#fff;
          }
 
-        &:hover::after{
-            width: 100%;
-            height: 100%;
-            border-radius: 0;
-        }
-
-        &::after{
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 27%;
-            height: 30%;
-            /* background-color: orange; */
-            content: '';
-            border-bottom-right-radius: 90%;
-            transition: all .3s ease-in-out;
-            transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        }
-
+       
         >div{
             font-size: 2rem;
             color: #fff;
@@ -231,7 +203,8 @@ const ServiceStyle = styled.div`
 
         p{
             color: #868382;
-            font-size: .8rem;
+            font-size: .9rem;
+            text-align: left;
         }
        }
         

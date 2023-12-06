@@ -70,14 +70,16 @@ function About() {
                     <DiMysql/>
                 </div>
             </div>  
-             <div>
+             
+             
+            <div className='about-me'>
 
-            <h1>About me</h1>
-            <h2>Hello, I'am Nathanim Tadele</h2>
-            <p className='about'>I 'm a full-stack software developer with a passion for JavaScript and Python. My expertise spans front-end and back-end development, creating user-friendly interfaces, and building scalable server-side applications. 
+                <h1>About me</h1>
+                <h2>Hello, I'am Nathanim Tadele</h2>
+                <p className='about'>I 'm a full-stack software developer with a passion for JavaScript and Python. My expertise spans front-end and back-end development, creating user-friendly interfaces, and building scalable server-side applications. 
                 I thrive on solving complex problems, embrace continuous learning, and collaborate effectively in team environments. Let's connect and explore how we can work together on exciting projects.</p>
- <button onClick={handleDownload}>CV here</button>
-        </div>  
+                <button onClick={handleDownload}>CV here</button>
+             </div>  
     </AboutStyle>
     </>
   )

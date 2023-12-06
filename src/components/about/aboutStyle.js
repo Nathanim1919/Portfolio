@@ -5,7 +5,8 @@ export const AboutStyle= styled.div`
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    background-color:rgba(0,0,0,.3);
+    /* background-color:rgba(0,0,0,.3); */
+    border-top:2px solid gold;
     position: relative;
     top:-0rem;
     padding:0rem;
@@ -17,6 +18,8 @@ export const AboutStyle= styled.div`
         display:flex;
         flex-direction:column;
         place-items:center;
+        gap:1rem;
+        text-align: center;
         width:80%;
 
         >*{
