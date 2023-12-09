@@ -116,6 +116,16 @@ function Works() {
                 </div>
             </div>
         </div>
+        <div class="experience-container">
+           <h1>My Junior Dev Chronicles 🚀</h1>
+                <p>When I was just starting my web development journey, I hopped on the CSS Battle and Frontend Mentor rollercoaster. It was like unleashing my creativity and making cool web stuff! 🎨</p>
+                <p>Imagine me as a junior coder – using these tools was like my superhero training. Now, I'm a web wizard!</p>
+            
+            <div class="link-container">
+                <NavLink to={"https://cssbattle.dev/player/9vYOH5sq2Nf7u3FKYZpjj7hm5Hh1"} target="_blank">Join the CSS Battle</NavLink>
+                <NavLink to={"https://www.frontendmentor.io/profile/Nathanim1919"} target="_blank">Join the Frontend Mentor</NavLink>
+            </div>
+        </div>
     </WorksStyle>
     </>
   )

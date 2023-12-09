@@ -99,6 +99,8 @@ export const WorksStyle = styled.div`
 
             }
 
+          
+
             P{
                 font-size: .8rem;
                 color: #eee;
@@ -139,11 +141,35 @@ export const WorksStyle = styled.div`
            }
         }
     }
+      .experience-container{
+                color: #fff;
+                padding: 2rem;
+
+                .link-container{
+                    color: #fff;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 1rem;
+
+                    >*{
+                        flex: 1;
+                        padding: .5rem 1rem;
+                        background-color: #333;
+                        color: #fff;
+                        text-decoration: none;
+                        display: grid;
+                        place-items: center;
+                    }
+                }
+            }
    
      @media screen and (min-width: 800px){
         width: 90%;
         margin: 3rem auto;
      }
+
+
 
    @media screen and (min-width: 900px){
     width: 70%;
