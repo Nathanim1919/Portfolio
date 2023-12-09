@@ -38,6 +38,8 @@ function About() {
        link.href = cvFilePath;
        link.download = './cv.pdf'; // Set the desired download filename
        link.click();
+
+       window.open('/Portfolio/cv.pdf', '_blank');
    };
 
   return (

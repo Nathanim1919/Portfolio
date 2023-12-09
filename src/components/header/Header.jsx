@@ -73,6 +73,7 @@ export const HeaderStyle = styled.div`
     color: #fff;
     > * {
       cursor: pointer;
+      outline: none;
     }
   }
 
@@ -127,6 +128,7 @@ export const HeaderStyle = styled.div`
      
      .navIcon{
       display: none;
+      outline: none;
      }
 
        > div:nth-child(2) {

@@ -10,6 +10,27 @@ import {
     SiSimilarweb
 } from 'react-icons/si'
 import Aos from 'aos'
+import {
+    FaNodeJs,
+    FaReact,
+    FaPython,
+    FaHtml5
+} from 'react-icons/fa'
+import {
+    BiLogoFlask,
+    BiLogoDjango,
+    BiLogoMongodb,
+} from 'react-icons/bi'
+import {
+    DiDjango,
+    DiJavascript1
+} from "react-icons/di";
+import {
+    BsDatabaseFillLock
+} from "react-icons/bs";
+import {
+    SiMysql
+} from "react-icons/si";
 import 'aos/dist/aos.css'
 
 function Services() {
@@ -36,6 +57,11 @@ useEffect(() => {
         </div>
         <h2>Front-end Development</h2>
         <p>I specialize in crafting engaging and visually appealing user interfaces for websites, ensuring a seamless and interactive experience for your audience. Technologies: ReactJS, Redux.</p>
+        <div className='tech'>
+            <li><FaReact/></li>
+            <li><DiJavascript1/></li>
+            <li><FaHtml5 /></li>
+        </div>
     </div>
 
     <div data-aos="zoom-in">
@@ -44,25 +70,30 @@ useEffect(() => {
         </div>
         <h2>Back-end Development</h2>
         <p>With a focus on server-side logic and database management, I excel in building robust and scalable back-end systems to power your web applications. Technologies: Node.js, MongoDB, SQLDB, Django, Flask.</p>
-    </div>
-
-    <div data-aos="zoom-in">
-        <div>
-            <AiFillApple />
+          <div className='tech'>
+            <li><FaNodeJs/></li>
+            <li><DiDjango/></li>
+            <li>< BiLogoFlask/></li>
         </div>
-        <h2>App Development</h2>
-        <p>I have extensive experience in designing and developing mobile applications that deliver seamless experiences on various platforms. Technologies: React Native.</p>
     </div>
+   <div data-aos="zoom-in">
+  <div>
+    <BsDatabaseFillLock />
+  </div>
+  <h2>Database Expertise</h2>
+  <p>With a focus on database design, management, and optimization, I excel in building robust and scalable back-end systems to power your web applications. Technologies: MongoDB, MySQL, SQL Server, Node.js, Django, Flask.</p>
+  <div className='tech'>
+    <li><BiLogoMongodb /></li>
+    <li><SiMysql /></li>
+  </div>
 </div>
 
-
-    </ServiceStyle>
+</div>
+</ServiceStyle>
   );
 }
 
 export default Services;
-
-
 
 const ServiceStyle = styled.div`
     display: grid;
@@ -150,6 +181,7 @@ const ServiceStyle = styled.div`
        >div{
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         padding: 1rem;
         box-shadow: 0 9px 20px rgba(0,0,0,.071);
         gap: .6rem;
@@ -160,9 +192,27 @@ const ServiceStyle = styled.div`
         z-index: 3;
         overflow: hidden;
         cursor: pointer;
-        border:2px solid transparent;
+        border:2px solid gold;
         text-align: left;
-        border-left: 1px solid #fff;
+
+        .tech{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+
+            >*{
+                list-style-type: none;
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                display: grid;
+                color: gold;
+                background-color: #333;
+                place-items: center;
+                font-size: 1.3rem;
+            }
+        }
         
         >*{
             position: relative;
@@ -207,7 +257,6 @@ const ServiceStyle = styled.div`
             text-align: left;
         }
        }
-        
     }
 
     @media screen and (max-width: 768px) {
@@ -217,14 +266,14 @@ const ServiceStyle = styled.div`
             width: 40%;
             height: 10%;
             bottom: 0rem;
-         }
+        }
          
-         &::before{
+        &::before{
            content: '';
-            height: 10%;
-            position: absolute;
-            top: 0rem;
-         }
+             height: 10%;
+             position: absolute;
+             top: 0rem;
+           }
         }
     }
 `
