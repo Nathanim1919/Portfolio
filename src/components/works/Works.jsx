@@ -13,6 +13,9 @@ import {
     FaPython
 } from 'react-icons/fa'
 import {NavLink} from 'react-router-dom'
+import {
+    FaLaptopCode
+} from "react-icons/fa6";
 
 import {
     BiLogoMongodb,
@@ -23,6 +26,9 @@ import {
     DiJavascript1,
     DiMysql
 } from 'react-icons/di'
+import {
+    FaFire
+} from "react-icons/fa";
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -116,16 +122,35 @@ function Works() {
                 </div>
             </div>
         </div>
-        <div class="experience-container">
-           <h1>My Junior Dev Chronicles 🚀</h1>
-                <p>When I was just starting my web development journey, I hopped on the CSS Battle and Frontend Mentor rollercoaster. It was like unleashing my creativity and making cool web stuff! 🎨</p>
-                <p>Imagine me as a junior coder – using these tools was like my superhero training. Now, I'm a web wizard!</p>
+       <div class="experience-container">
+            <h1>My Junior Dev <span>Chronicles</span> 🚀</h1>
+            <p>Embarking on my web development journey was like stepping into a coding wonderland. I vividly remember the thrill of riding the CSS Battle and Frontend Mentor rollercoaster, where every line of code became a brushstroke in the canvas of my pixel-perfect masterpieces! 🎨</p>
             
-            <div class="link-container">
-                <NavLink to={"https://cssbattle.dev/player/9vYOH5sq2Nf7u3FKYZpjj7hm5Hh1"} target="_blank">Join the CSS Battle</NavLink>
-                <NavLink to={"https://www.frontendmentor.io/profile/Nathanim1919"} target="_blank">Join the Frontend Mentor</NavLink>
-            </div>
-        </div>
+            <p>As a junior coder, my debugger was my trusty sidekick – a superhero training tool. Together, we conquered bugs, transformed errors into opportunities, and turned coding challenges into triumphs. Each keystroke felt like crafting my destiny as a web wizard!</p>
+            <p>These are the <span>Super Powers</span> that made me what I am now:</p>
+            <ul>
+                <div>
+                    < FaFire/>
+                    <li><NavLink to="https://www.alxafrica.com/programmes/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>ALX Africa</NavLink> Completed the Full Stack Software Engineering Intensive Course and emerged as a coding superhero!</li>
+                </div>
+
+                <div>
+                     <FaFire/>
+                    <li><NavLink to="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>The Odin Project</NavLink> Conquered the full stack web development course like a mythical deity!</li>
+                </div>
+
+                <div>
+                     < FaFire/>
+                     <li><NavLink to="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>Frontend Mentor</NavLink> Where I honed my frontend skills and became a design maestro.</li>
+                </div>
+
+                <div>
+                     < FaFire/>
+                    <li><NavLink to="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>CSS Battle</NavLink> The arena where I battled with CSS challenges and emerged victorious!</li>
+                </div>
+            </ul>
+      </div>
+
     </WorksStyle>
     </>
   )

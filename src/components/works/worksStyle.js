@@ -29,6 +29,7 @@ export const WorksStyle = styled.div`
                 font-size: .8rem;
                 padding: 0.2rem;
                 border-radius: 3px;
+
     
                 &:hover{
                     opacity: .6;
@@ -145,21 +146,53 @@ export const WorksStyle = styled.div`
                 color: #fff;
                 padding: 2rem;
 
-                .link-container{
-                    color: #fff;
+                
+                h1 span:nth-of-type(1){
+                    font-size: 2.3rem;
+                    background-color: #333;
+                    padding: 0 1rem;
+                    color: gold;
+                }
+                span{
+                    font-size: 1.5rem;
+                    color: gold;
+                    background-color: transparent;
+                }
+
+                ul{
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    flex-direction: column;
                     gap: 1rem;
 
+                    li{
+                        color: rgba(255,255,255,.7);
+                    }
+                    
                     >*{
-                        flex: 1;
-                        padding: .5rem 1rem;
-                        background-color: #333;
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                        list-style-type: none;
+
+                        >*:nth-child(1){
+                            font-size: 1.5rem;
+                            color: gold;
+                        }
+                    }
+
+        
+
+                    a{
                         color: #fff;
+                        padding: 0.3rem 1rem;
+                        background-color: #333;
+                        width: 100%;
                         text-decoration: none;
-                        display: grid;
-                        place-items: center;
+                        display: flex;
+                        font-size: 1.3rem;
+                        align-items: center;
+                        gap: 1rem;
                     }
                 }
             }
