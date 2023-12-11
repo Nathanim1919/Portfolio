@@ -37,6 +37,7 @@ function Contact({setSendMsg, setSucces}) {
 
   return (
     <ContactStyle id='contact'>
+      <div>
       <h1  data-aos="fade-up">Contact Me</h1>
       <p  data-aos="fade-up">Feel free to contact me any time. I will get back to you as soon as I can!</p>
       <form form data-aos = "zoom-in"
@@ -48,6 +49,8 @@ function Contact({setSendMsg, setSucces}) {
         <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" placeholder="Message" />
         <button type="submit">Send</button>
       </form>
+
+      </div>
     </ContactStyle>
   );
 }
@@ -58,20 +61,37 @@ export default Contact
 
 
 const ContactStyle = styled.div`
+  display: grid;
+  place-items: center;
+  width: 100vw;
+>div{
+
     display: grid;
     place-items: center;
     padding: 3rem;
-    width: 70%;
     background-color:rgba(0,0,0,.4);
-    margin:3rem auto;
+    margin:3rem;
     color:#fff;
+    width: 70%;
+
+
+
+    h1{
+      font-size: clamp(2rem ,5vw , 3rem);
+      backdrop-filter: blur(20px);
+      color: gold;
+      padding: .3rem 1rem;
+      display: grid;
+      place-items: center;
+    }
 
     form{
         display: flex;
         flex-direction: column;
         padding: 1rem;
-        width: 60%;
+        margin: auto;
         gap: 2rem;
+        width: 80%;
 
         input{
             padding:1rem;
@@ -100,11 +120,17 @@ const ContactStyle = styled.div`
         }
     }
 
+  }
 
-    @media screen and (max-width:800px){
-        width: 70vw;
+  @media screen and (max-width:700px){
+    >div{
+      margin: auto;
         form{
-            width: 100%;
+            margin: auto;
         }
+      
     }
+  }
+
+
 `

@@ -129,31 +129,14 @@ function Works() {
             <p>As a junior coder, my debugger was my trusty sidekick – a superhero training tool. Together, we conquered bugs, transformed errors into opportunities, and turned coding challenges into triumphs. Each keystroke felt like crafting my destiny as a web wizard!</p>
             <p>These are the <span>Super Powers</span> that made me what I am now:</p>
             <ul>
-                <div>
-                    < FaFire/>
-                    <li><NavLink to="https://www.alxafrica.com/programmes/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>ALX Africa</NavLink> Completed the Full Stack Software Engineering Intensive Course and emerged as a coding superhero!</li>
-                </div>
-
-                <div>
-                     <FaFire/>
-                    <li><NavLink to="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>The Odin Project</NavLink> Conquered the full stack web development course like a mythical deity!</li>
-                </div>
-
-                <div>
-                     < FaFire/>
-                     <li><NavLink to="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>Frontend Mentor</NavLink> Where I honed my frontend skills and became a design maestro.</li>
-                </div>
-
-                <div>
-                     < FaFire/>
-                    <li><NavLink to="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer"><FaLaptopCode/>CSS Battle</NavLink> The arena where I battled with CSS challenges and emerged victorious!</li>
-                </div>
+                <li><NavLink to="https://www.alxafrica.com/programmes/" target="_blank" rel="noopener noreferrer"> < FaFire/>ALX Africa</NavLink> Completed the Full Stack Software Engineering Intensive Course and emerged as a coding superhero!</li>
+                <li><NavLink to="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer"> < FaFire/>The Odin Project</NavLink> Conquered the full stack web development course like a mythical deity!</li>
+                <li><NavLink to="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer"> < FaFire/>Frontend Mentor</NavLink> Where I honed my frontend skills and became a design maestro.</li>
+                <li><NavLink to="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer"> < FaFire/>CSS Battle</NavLink> The arena where I battled with CSS challenges and emerged victorious!</li>
             </ul>
       </div>
-
     </WorksStyle>
     </>
   )
 }
-
-export default Works
+export default Works;

@@ -144,7 +144,10 @@ export const WorksStyle = styled.div`
     }
       .experience-container{
                 color: #fff;
+                width: 90%;
+                margin: 1rem auto;
                 padding: 2rem;
+                position: relative;
 
                 
                 h1 span:nth-of-type(1){
@@ -163,20 +166,26 @@ export const WorksStyle = styled.div`
                     display: flex;
                     flex-direction: column;
                     gap: 1rem;
+                    width: 80%;
+                    position: relative;
+                   
 
-                    li{
+                    /* li{
                         color: rgba(255,255,255,.7);
+                        
                     }
-                    
-                    >*{
+                     */
+                li{
                         margin: 0;
                         display: flex;
-                        align-items: center;
+                        align-items: flex-start;
+                        flex-direction: column;
                         gap: 1rem;
                         list-style-type: none;
+                        width: 90%;
+                        left: 0;
 
                         >*:nth-child(1){
-                            font-size: 1.5rem;
                             color: gold;
                         }
                     }
@@ -194,6 +203,10 @@ export const WorksStyle = styled.div`
                         align-items: center;
                         gap: 1rem;
                     }
+                }
+                @media screen and (min-width: 800px){
+                   width: 90%;
+                   margin: 3rem auto;
                 }
             }
    
