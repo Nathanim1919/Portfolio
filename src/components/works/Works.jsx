@@ -59,7 +59,7 @@ function Works() {
                 <div className='textContent' data-aos="fade-left">
                     <h2>Social Media Web App</h2>
                     <p>Built a MERN stack social media app with essential features like real-time chat, post creation, story sharing, and interactive liking and commenting.</p>
-                    <div className='technologies i used'>
+                    <div className='technologies'>
                         <FaReact/>
                         <FaNodeJs/>
                         <BiLogoMongodb/>
@@ -77,7 +77,7 @@ function Works() {
                 <div className='textContent' data-aos="fade-right">
                     <h2>Project Manegment Web App</h2>
                     <p>Developed a web-based project management application with robust chat functionality, project scheduling, and priority management for efficient collaboration and task organization.</p>
-                    <div className='technologies i used'>
+                    <div className='technologies'>
                         <FaReact/>
                         <FaNodeJs/>
                         <BiLogoMongodb/>
@@ -95,7 +95,7 @@ function Works() {
                 <div className='textContent' data-aos="fade-left">
                     <h2>E-learning Front-end Design</h2>
                     <p>Crafted a dynamic e-learning front-end using React, offering an engaging user interface for seamless online education with rich multimedia content and interactive features.</p>
-                    <div className='technologies i used'>
+                    <div className='technologies'>
                         <FaReact/>
                     </div>
                     <div>
@@ -111,7 +111,7 @@ function Works() {
                 <div className='textContent' data-aos="fade-right">
                     <h2>Entertainment web app</h2>
                     <p>Designed and developed a user-friendly movie app with an intuitive interface, enabling users to discover, browse, and explore movies with detailed information, ratings, and trailers.</p>
-                    <div className='technologies i used'>
+                    <div className='technologies'>
                        <BiLogoCss3/>
                        <DiJavascript1/>
                     </div>

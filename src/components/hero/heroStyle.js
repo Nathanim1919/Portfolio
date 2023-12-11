@@ -35,7 +35,9 @@ export const HeroStyle = styled.div`
             }
               h3{
                     font-size: 1.2rem;
-                    color: #eee;
+                    color: gold;
+                    background-color: #333;
+                    padding:.3rem 1rem;
                     font-weight: 200;
                 }
                 h1{
@@ -78,8 +80,8 @@ export const HeroStyle = styled.div`
             button{
                 padding: .3rem 1rem;
                 border: none;
-                background-color: #fff;
-                color: #333;
+                background-color: #333;
+                color: gold;
                 outline: none;
                 border: none;
                 cursor: pointer;

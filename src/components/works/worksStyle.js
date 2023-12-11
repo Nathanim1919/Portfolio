@@ -13,7 +13,9 @@ export const WorksStyle = styled.div`
 
         h2{
             font-size: 1rem;
-            color:#fff;
+            color:gold;
+            background-color: #333;
+            padding: .3rem 2rem;
         }
 
         >div{
@@ -24,7 +26,7 @@ export const WorksStyle = styled.div`
                 gap: .7rem;
                 cursor: pointer;
                 background-color: #333;
-                color: #fff;
+                color: gold;
                 text-decoration: none;
                 font-size: .8rem;
                 padding: 0.2rem;
@@ -110,8 +112,10 @@ export const WorksStyle = styled.div`
             h2{
                 font-size: 1rem;
                 font-weight: 500;
-                background-color:orange;
-                padding:0 1rem;
+                background-color:#333;
+                color:gold;
+                font-weight: bolder;
+                padding:.3rem 1rem;
             }
 
             >*{
@@ -122,15 +126,6 @@ export const WorksStyle = styled.div`
            .image{
             padding: 1rem;
             background-color: #fff;
-            /* &::after{
-                position: absolute;
-                content: '';
-                width: 40%;
-                height: 50%;
-                background-color: #333;
-                top: -2rem;
-                left: -2rem;
-            } */
            }
 
            img{

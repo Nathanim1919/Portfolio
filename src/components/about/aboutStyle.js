@@ -7,10 +7,7 @@ export const AboutStyle= styled.div`
     align-items: center;
     border-top:2px solid gold;
     position: relative;
-    top:-0rem;
-    padding:0rem;
     gap: 1rem;
-    backdrop-filter: blur(4px);
     width:100vw;
 
     >div:nth-child(2){
@@ -19,7 +16,6 @@ export const AboutStyle= styled.div`
         place-items:center;
         gap:1rem;
         text-align: left;
-        width:80%;
 
         >*{
             margin:0;
@@ -32,7 +28,10 @@ export const AboutStyle= styled.div`
     }
     h1{
         font-size: 1.4rem;
-        color:#fff;
+        color:gold;
+        background-color:#333;
+        padding:.3rem 2rem;
+
     }
 
     h2{
@@ -43,16 +42,43 @@ export const AboutStyle= styled.div`
     p{
         color: #eee;
     }
+
+    div.about-me{
+          background-color:rgba(0,0,0,.1);
+             backdrop-filter:blur(10px);
+             width:100%;
+             >*{
+                width:70%;
+             }
+    }
     div.skills{
+             display: flex;
+             flex-direction:column;
+             background-color:rgba(0,0,0,.1);
+             backdrop-filter:blur(10px);
+             width: 100%;
+             padding:3rem;
+             >*{
+                width:70%;
+                margin: auto;
+             }
+
+             h2{
+                color: gold;
+                background-color: #333;
+                padding:.3rem 1rem;
+             }
+
+        >div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         place-items: center;
         font-size: 1.5rem;
         gap: 1rem;
-        width: 100%;
         color:orange;
         position: relative;
         z-index: 12;
+        color:gold;
          >*{
             width: 30px;
             height: 30px;
@@ -60,9 +86,9 @@ export const AboutStyle= styled.div`
             border-radius: 50%;
             display: grid;
             place-items: center;
-            /* background-color: orange; */
-            color: #eee;
+            color: gold;
          }
+        }
     }
 
         button{
@@ -87,17 +113,21 @@ export const AboutStyle= styled.div`
 
 
     @media(min-width:768px){
-       width: 60vw;
+       width: 80vw;
        margin: auto;
        padding: 3rem;
        backdrop-filter: blur(2px);
         display: grid;
-        grid-template-columns: .4fr .6fr;
+        grid-template-columns: .5fr .5fr;
         place-items: center;
          top:-4rem;
 
-    >div{
-        background-color: transparent;
+    >div.skills, >div.about-me{
+       padding: 0;
+        background-color:rgba(0,0,0,.2);
+        backdrop-filter: blur(30px);
+        height: 100%;
+        padding: 1rem 0;
     }
       div.skills{
         grid-template-columns: repeat(auto-fit, minmax(60px,1fr));
@@ -105,7 +135,7 @@ export const AboutStyle= styled.div`
 
          h1{
         font-size: 2rem;
-        color:#fff;
+        color:gold;
     }
 
     h2{

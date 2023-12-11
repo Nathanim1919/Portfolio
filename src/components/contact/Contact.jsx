@@ -74,8 +74,6 @@ const ContactStyle = styled.div`
     color:#fff;
     width: 70%;
 
-
-
     h1{
       font-size: clamp(2rem ,5vw , 3rem);
       backdrop-filter: blur(20px);

@@ -170,29 +170,31 @@ const ServiceStyle = styled.div`
     }
     .services{
        display: grid;
-       grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-       gap: 1rem;
-       width: 75%;
+       place-items: center;
+       grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+       gap: 3rem;
+       width: 80%;
        margin:3rem auto;
        position: relative;
-       padding: 3rem;
+       padding: 2rem;
 
 
        >div{
         display: flex;
+        height:100%;
         flex-direction: column;
         justify-content: space-between;
         padding: 1rem;
         box-shadow: 0 9px 20px rgba(0,0,0,.071);
         gap: .6rem;
         border-radius: 10px;
-        border-left: 10px solid #333;
-        background-color:rgba(0,0,0,.021);
+        background-color:rgba(255,255,255,.03);
+        backdrop-filter: blur(20px);
         position: relative;
         z-index: 3;
         overflow: hidden;
         cursor: pointer;
-        border:2px solid gold;
+        border:1px solid #333;
         text-align: left;
 
         .tech{
@@ -221,7 +223,7 @@ const ServiceStyle = styled.div`
         
         &:hover
         {
-            border:2px solid orange;
+            border:1px solid orange;
             color:#fff;
          }
 
@@ -261,11 +263,16 @@ const ServiceStyle = styled.div`
 
     @media screen and (max-width: 768px) {
 
-        .services{
+        >div.services{
+            width: 90%;
+            position: relative;
+            left: -1.4rem;
             &::after{
             width: 40%;
             height: 10%;
             bottom: 0rem;
+            gap:3rem;
+            
         }
          
         &::before{

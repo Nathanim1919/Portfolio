@@ -47,6 +47,9 @@ function About() {
     <AboutStyle>
        
             <div className='skills'>
+                
+                 <h2>What i am good At.</h2>
+                <div>
                 <div>
                     <DiJavascript1/>
                 </div>
@@ -70,6 +73,7 @@ function About() {
                 </div>
                 <div>
                     <DiMysql/>
+                </div>
                 </div>
             </div>  
              
