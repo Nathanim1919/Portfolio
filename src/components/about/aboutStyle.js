@@ -10,6 +10,22 @@ export const AboutStyle= styled.div`
     gap: 1rem;
     width:100vw;
 
+    a{
+        padding: 0.5rem 1.1rem;
+        background-color: #333;
+        color: gold;
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        text-decoration: none;
+        font-weight: 800;
+
+        &:hover{
+            background-color: transparent;
+            color: gold;
+        }
+    }
+
     >div:nth-child(2){
         display:flex;
         flex-direction:column;
