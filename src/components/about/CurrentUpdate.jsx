@@ -1,18 +1,25 @@
-import React from "react";
+import React ,{useEffect}from "react";
 import { Container } from "./update";
 import { Link } from "react-router-dom";
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 
 function CurrentUpdate() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000
+    })
+  }, [])
   return (
     <Container className="update">
       <h2>My Current Update</h2>
       <p>
         Hi there! 👋 I'm currently working as a full-stack software engineer at
         Atlas Computer Technology PLC, located in Addis Ababa, Ethiopia. I'm
-        passionate about building innovative solutions and contributing to the
+         passionate about building innovative solutions and contributing to the
         tech community.
       </p>
-      <div>
+      <div  data-aos="fade-up">
         <h3>Technologies I'm Currently Using</h3>
         <ul>
           <li>⚙️ Spring Boot</li>
@@ -20,10 +27,9 @@ function CurrentUpdate() {
           <li>🅰️ Angular</li>
           <li>🐘 PostgreSQL</li>
           <li>🚀 GraphQL</li> {/* Additional ingredient */}
-          <li>📱 Mobile App Development</li> {/* Additional ingredient */}
         </ul>
       </div>
-      <div>
+      <div  data-aos="fade-up">
         <h3>Projects and Achievements</h3>
         <p>
           🏆 I recently led a team in developing an innovative project that
@@ -49,7 +55,7 @@ function CurrentUpdate() {
           of technology.
         </p>
       </div>
-      <div>
+      <div  data-aos="fade-up">
         <h3>Upcoming Goals (2024)</h3>
         <p>
           🚀 Embarking on an exhilarating journey into the realm of AI and deep
@@ -65,7 +71,7 @@ function CurrentUpdate() {
           pioneering the future of technology!
         </p>
       </div>
-      <div className="calltoaction">
+      <div className="calltoaction"  data-aos="fade-up">
         <p>
           ✉️ Reach out and let's create something amazing. Describe your
           business, share your dreams, and I'll bring the tech magic to make it

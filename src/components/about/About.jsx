@@ -37,7 +37,7 @@ function About() {
   return (
     <>
       <AboutStyle>
-        <div className="skills">
+        <div className="skills" data-aos="zoom-in">
           <h2>What i am good At.</h2>
           <div>
             <div>
@@ -67,7 +67,7 @@ function About() {
           </div>
         </div>
 
-        <div className="about-me">
+        <div className="about-me" data-aos="zoom-in">
           <h1>About me</h1>
           <h2>Hello, I'am Nathanim Tadele </h2>
           <p className="about">
