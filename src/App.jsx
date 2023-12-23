@@ -7,6 +7,7 @@ import Works from './components/works/Works'
 import Services from './components/services/Services'
 import Contact from './components/contact/Contact'
 import Success from './components/success/Success'
+import CurrentUpdate from './components/about/CurrentUpdate'
 
 function App() {
 
@@ -16,14 +17,15 @@ function App() {
     <>
       <div>
         <div className='heros'>
-        <Header/>
-        <Hero/>
-        </div>
-        <About/>
-        <Services/>
-        <Works/>
-        <Success setSendMsg={setSendMsg} setSucces={setSucces} sendMsg={sendMsg} success = {success}/>
-        <Contact setSendMsg={setSendMsg}setSucces={setSucces}/>
+          <Header/>
+          <Hero/>
+          </div>
+          <About/>
+          <CurrentUpdate/>
+          <Services/>
+          <Works/>
+          <Success setSendMsg={setSendMsg} setSucces={setSucces} sendMsg={sendMsg} success = {success}/>
+          <Contact setSendMsg={setSendMsg}setSucces={setSucces}/>
        </div>
     </>
   )
