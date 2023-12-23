@@ -13,6 +13,14 @@ export const Container = styled.div`
         padding: 2rem;
     }
 
+    a{
+        color: gold;
+        padding: 0rem 1rem;
+        background-color: #333;
+        margin: 1rem;
+        text-decoration: none;
+    }
+
   h3, h2{
         background-color: #333;
         color: gold;
@@ -40,4 +48,22 @@ export const Container = styled.div`
             }
         }
     }
+
+  .calltoaction{
+    background-color: #000;
+    width: 70%;
+    margin:3rem auto;
+    color: gold;
+
+
+    a{
+        padding: 0.4rem 1rem;
+        background-color: #333;
+        color: gold;
+        border: none;
+        font-weight: inherit;
+        cursor: pointer;
+    }
+
+  }  
 `;

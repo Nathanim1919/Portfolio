@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "./update";
+import { Link } from "react-router-dom";
 
 function CurrentUpdate() {
   return (
@@ -35,6 +36,12 @@ function CurrentUpdate() {
           development of cutting-edge chatbots and leveraging AI to drive lead
           generation, fuel business growth, and redefine customer support
           services.
+          <Link
+            to={"https://nathanim1919.github.io/SmartFlow/"}
+            target="_blank"
+          >
+            CEO of Smart-Flow
+          </Link>
         </p>
         <p>
           🌐 Contributing to open-source projects and staying updated with the
@@ -57,6 +64,14 @@ function CurrentUpdate() {
           intelligent systems. Here's to a year of learning, growth, and
           pioneering the future of technology!
         </p>
+      </div>
+      <div className="calltoaction">
+        <p>
+          ✉️ Reach out and let's create something amazing. Describe your
+          business, share your dreams, and I'll bring the tech magic to make it
+          happen. I know myself, and I know innovation.
+        </p>
+        <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>Get in touch.</Link>
       </div>
     </Container>
   );

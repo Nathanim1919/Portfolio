@@ -12,7 +12,7 @@ import {
 import { DiJavascript1, DiMysql } from "react-icons/di";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+
 
 function About() {
   useEffect(() => {
@@ -70,7 +70,6 @@ function About() {
         <div className="about-me">
           <h1>About me</h1>
           <h2>Hello, I'am Nathanim Tadele </h2>
-          <Link to={'https://nathanim1919.github.io/SmartFlow/'} target="_blank">CEO of Smart-Flow</Link>
           <p className="about">
             I 'm a full-stack software developer with a passion for JavaScript
             and Python. My expertise spans front-end and back-end development,
