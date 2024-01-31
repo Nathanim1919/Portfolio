@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-import Aos from 'aos'
-import 'aos/dist/aos.css'
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 function Contact({setSendMsg, setSucces}) {
@@ -14,7 +14,7 @@ function Contact({setSendMsg, setSucces}) {
         Aos.init({
             duration: 1000
         })
-    }, [])
+    }, []);
 
   const handleForm = async (e) => {
     e.preventDefault(); // Prevent the default form submission behavior
@@ -28,12 +28,16 @@ function Contact({setSendMsg, setSucces}) {
       setName('');
       setEmail('');
       setMessage('');
-      setSendMsg(false)
-      setSucces(true)
+      setSendMsg(false);
+      setSucces(true);
     } catch (error) {
       console.log(error);
     }
   }
+
+  // const newFun = () =>{
+  //   console.log("hello, world!")
+  // }
 
   return (
     <ContactStyle id='contact'>
@@ -54,11 +58,7 @@ function Contact({setSendMsg, setSucces}) {
     </ContactStyle>
   );
 }
-
 export default Contact
-
-
-
 
 const ContactStyle = styled.div`
   display: grid;
@@ -129,6 +129,4 @@ const ContactStyle = styled.div`
       
     }
   }
-
-
 `
