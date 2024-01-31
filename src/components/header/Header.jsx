@@ -15,31 +15,85 @@ function Header() {
   return (
     <>
       <HeaderStyle opennav={opennav}>
-        <div className='logo'>
+        <div className="logo">
           <h3>
-             <Link to="hero" spy={true} smooth={true} offset={-150} duration={500}> <FaCode /></Link>
-            </h3>
-          <div className='navIcon' onClick={() => setOpenNav(!opennav)}>
+            <Link
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-150}
+              duration={500}
+            >
+              {" "}
+              <FaCode />
+            </Link>
+          </h3>
+          <div className="navIcon" onClick={() => setOpenNav(!opennav)}>
             {opennav ? <AiOutlineClose /> : <AiOutlineMenu />}
           </div>
         </div>
 
-        <div className='navigation'>
+        <div className="navigation">
           <ul>
             <li>
-              <Link  onClick = {
-              () => setOpenNav(false)
-            }  to="service" spy={true} smooth={true} offset={-40} duration={500}>Service</Link>
-             </li>
-           <li>
-               <Link onClick = {
-             () => setOpenNav(false)
-           }  to="works" spy={true} smooth={true} offset={-60} duration={500}>Works</Link>
+              <Link
+                onClick={() => setOpenNav(false)}
+                to="service"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                Service
+              </Link>
             </li>
-             <li>
-               <Link onClick = {
-               () => setOpenNav(false)
-             }  to="contact" spy={true} smooth={true} offset={-40} duration={500}>Contact</Link>
+            <li>
+              <Link
+                onClick={() => setOpenNav(false)}
+                to="works"
+                spy={true}
+                smooth={true}
+                offset={-60}
+                duration={500}
+              >
+                Works
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => setOpenNav(false)}
+                to="about_me"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                About me
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => setOpenNav(false)}
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                Blog
+              </Link>
+            </li>
+            <li>
+              <Link
+                onClick={() => setOpenNav(false)}
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-40}
+                duration={500}
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </div>
