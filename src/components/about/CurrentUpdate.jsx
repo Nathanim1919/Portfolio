@@ -32,11 +32,6 @@ function CurrentUpdate() {
       <div  data-aos="fade-up">
         <h3>Projects and Achievements</h3>
         <p>
-          🏆 I recently led a team in developing an innovative project that
-          streamlined our internal processes, resulting in increased efficiency
-          and productivity.
-        </p>
-        <p>
           🚀 Proudly part of the Smart Flow family, an AI automation agency
           that's at the forefront of innovation! Currently contributing to the
           development of cutting-edge chatbots and leveraging AI to drive lead
@@ -53,22 +48,6 @@ function CurrentUpdate() {
           🌐 Contributing to open-source projects and staying updated with the
           latest industry trends keeps me excited about the ever-evolving world
           of technology.
-        </p>
-      </div>
-      <div  data-aos="fade-up">
-        <h3>Upcoming Goals (2024)</h3>
-        <p>
-          🚀 Embarking on an exhilarating journey into the realm of AI and deep
-          learning, transcending the boundaries of my current coding prowess.
-          Excited to unravel the mysteries of artificial intelligence and
-          contribute to groundbreaking advancements in technology.
-        </p>
-        <p>
-          🌌 In 2024, my goal is to dive headfirst into the world of AI,
-          exploring the depths of deep learning, understanding neural networks,
-          and pushing the boundaries of what's possible in the realm of
-          intelligent systems. Here's to a year of learning, growth, and
-          pioneering the future of technology!
         </p>
       </div>
       <div className="calltoaction"  data-aos="fade-up">
