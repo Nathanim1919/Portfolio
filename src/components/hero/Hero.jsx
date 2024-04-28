@@ -48,11 +48,8 @@ function Hero() {
                 <AiFillGithub/>
                 </NavLink>
             </div>
-            <div>
-              <button>
-                <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>Hire me.</Link>
-              </button>
-            </div>
+           
+                <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>Let's Talk.</Link>
         </div>
         <div className='Image' data-aos="fade-left">
           <div>

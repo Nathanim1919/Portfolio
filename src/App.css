@@ -13,6 +13,9 @@ body {
   place-items: center;
   width: 100vw;
   background-color: rgb(34, 32, 32);
+  font-family: "Jersey 20", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body>*{
@@ -23,10 +26,10 @@ body>*{
 body::after {
   content: "";
   position: fixed;
-  top: 27%;
-  width: 10rem;
+  top: 24%;
+  width: 30rem;
   left: 15%;
-  height: 10rem;
+  height: 30rem;
   background-color: rgba(31, 28, 44, 0.487);
   border-radius: 50%;
   z-index: 1;

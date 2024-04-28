@@ -134,8 +134,8 @@ function Works() {
                        <DiJavascript1/>
                     </div>
                     <div>
-                        <NavLink to={"https://nathanim.me"} target="_blank">Live Demo</NavLink>
-                        <NavLink to={"https://github.com/Nathanim1919/movie-app"} target="_blank">Source code</NavLink>
+                        <NavLink to={"https://landing.nathanim.me"} target="_blank">Live Demo</NavLink>
+                        <NavLink to={"https://github.com/Nathanim1919/"} target="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>

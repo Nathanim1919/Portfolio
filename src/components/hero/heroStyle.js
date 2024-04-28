@@ -81,6 +81,7 @@ export const HeroStyle = styled.div`
                 font-size: 1.4rem;
                 gap: 2rem;
                 color: #eee;
+                margin-top: 1rem;
 
                 >*{
                     cursor: pointer;
@@ -92,7 +93,7 @@ export const HeroStyle = styled.div`
                 }
              
             }
-            button{
+            a{ 
                 padding: .3rem 1rem;
                 border: none;
                 background-color: #333;
@@ -100,10 +101,11 @@ export const HeroStyle = styled.div`
                 outline: none;
                 border: none;
                 cursor: pointer;
-                font-weight: 800;
+                font-weight: 600;
                 border-radius: 4px;
                 font-family: inherit;
                 box-shadow: 0 7px 14px rgba(0,0,0,.05);
+                font-size: 1.5rem;
 
                 &:hover{
                     opacity: .3;
@@ -184,9 +186,9 @@ export const HeroStyle = styled.div`
 
               
              .Image{
-            overflow: hidden;
-            padding: 3rem 0;
-            top:3%;
+                overflow: hidden;
+                padding: 3rem 0;
+                top:3%;
 
             >div{
                 width: 28rem;
@@ -204,5 +206,4 @@ export const HeroStyle = styled.div`
         }
 
         }
-    
-`
+`;
