@@ -8,6 +8,7 @@ import project2Img from '../../assets/p2.jpeg'
 import project3Img from '../../assets/p3.jpeg'
 import project4Img from '../../assets/p4.jpg'
 import project5Img from '../../assets/p5.png'
+import project6Img from '../../assets/p6.png'
 import {
     FaNodeJs,
     FaReact,
@@ -135,6 +136,23 @@ function Works() {
                     </div>
                     <div>
                         <NavLink to={"https://landing.nathanim.me"} target="_blank">Live Demo</NavLink>
+                        <NavLink to={"https://github.com/Nathanim1919/"} target="_blank">Source code</NavLink>
+                    </div>
+                </div>
+            </div>
+            <div className='project'>
+                <div className='image' data-aos="fade-left">
+                    <img src={project6Img} alt=''/>
+                </div>
+                <div className='textContent' data-aos="fade-right">
+                    <h2>Entertainment web app</h2>
+                    <p>Designed and developed a user-friendly movie app with an intuitive interface, enabling users to discover, browse, and explore movies with detailed information, ratings, and trailers.</p>
+                    <div className='technologies'>
+                       <BiLogoCss3/>
+                       <DiJavascript1/>
+                    </div>
+                    <div>
+                        <NavLink to={"https://smartflow.nathanim.me"} target="_blank">Live Demo</NavLink>
                         <NavLink to={"https://github.com/Nathanim1919/"} target="_blank">Source code</NavLink>
                     </div>
                 </div>

@@ -32,7 +32,6 @@ export const WorksStyle = styled.div`
                 padding: 0.2rem;
                 border-radius: 3px;
 
-    
                 &:hover{
                     opacity: .6;
                 }
@@ -56,11 +55,15 @@ export const WorksStyle = styled.div`
            gap: 2rem;
 
            .textContent{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            color:#fff;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem;
+                color:#fff;
+
+                h2{
+                    font-size: 2rem;
+                }
 
             >div:nth-child(4){
                 display:flex;
@@ -68,7 +71,6 @@ export const WorksStyle = styled.div`
 
                 >*{
                     color:#fff;
-                    font-size:.9rem;
                     text-decoration:none;
                     background-color:#fff;
                     color:#333;
@@ -105,12 +107,12 @@ export const WorksStyle = styled.div`
           
 
             P{
-                font-size: .8rem;
+                font-size: 1.3rem;
                 color: #eee;
             }
 
             h2{
-                font-size: 1rem;
+                font-size: 2rem;
                 font-weight: 500;
                 background-color:#333;
                 color:gold;
@@ -136,6 +138,8 @@ export const WorksStyle = styled.div`
             z-index: 5;
            }
         }
+
+     
     }
       .experience-container{
                 color: #fff;
@@ -222,7 +226,7 @@ export const WorksStyle = styled.div`
                 display: flex;
                 flex-direction: row;
             }
-              div.project:nth-child(2),div.project:nth-child(4){
+              div.project:nth-child(2),div.project:nth-child(4), div.project:nth-child(6){
                     flex-direction: row-reverse;
             }
         }
