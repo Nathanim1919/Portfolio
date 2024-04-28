@@ -86,7 +86,7 @@ function Works() {
                     </div>
                     <div>
                         <NavLink to={'https://github.com/Nathanim1919/Project-Hive'} traget="_blank">Live Demo</NavLink>
-                        <NavLink to={'https://github.com/Nathanim1919/Project-Hive'} traget="_blank">Source code</NavLink>
+                        <NavLink to={'https://projecthive.nathanim.me/'} traget="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>
