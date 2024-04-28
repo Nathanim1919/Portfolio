@@ -29,8 +29,8 @@ function Hero() {
     <>
     <HeroStyle id='hero'>
         <div className='hero-text' data-aos="fade-right">
-          <h3>Hello, I'm a</h3>
-            <h1>Software<br/>Engineer.</h1>
+          <h3>Hello, I'm Nathanim T.</h3>
+            <h1> a Full-Stack Software<br/>Developer.</h1>
             <div className='social'>
                 <NavLink  to = {
                   'https://www.instagram.com/na_tha_n_19/'

@@ -8,7 +8,12 @@ export const HeroStyle = styled.div`
         position: relative;
         z-index: 3;
         background-color: transparent;
-        overflow: hidden;
+        overflow: hidden; 
+        font-family: "Jersey 20", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+
 
 
         &::before{
@@ -30,6 +35,10 @@ export const HeroStyle = styled.div`
             gap: 1rem;
             padding: 1rem;
 
+            @media screen and (max-width: 768px){
+                       width: 85%;
+            }
+
             >*{
                 margin: 0;
             }
@@ -41,18 +50,24 @@ export const HeroStyle = styled.div`
                     font-weight: 200;
                 }
                 h1{
-                    font-size: 3rem;
-                    line-height: 45px;
+                    font-size: 6rem;
+                    line-height: 75px;
                     color: #fff;
                     letter-spacing: 5px;
                     position: relative;
+
+
+                    @media screen and (max-width: 768px){
+                        font-size: 3rem;
+                        line-height: 35px;
+                    }
 
                     &::after{
                         content: '';
                         position: absolute;
                         bottom: -.5rem;
                         left: 0;
-                        width: 20%;
+                        width: 26%;
                         height: 10px;
                         background-color: orange;
                     }
