@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const HeroStyle = styled.div`
         display: grid;
         place-items: center;
-        margin-top: 7rem;
         width: 100vw;
         position: relative;
         z-index: 3;
@@ -12,6 +11,63 @@ export const HeroStyle = styled.div`
         font-family: "Jersey 20", sans-serif;
         font-weight: 400;
         font-style: normal;
+
+
+
+        @media screen and (max-width: 768px){
+             margin-top: 5rem;
+        }
+
+     
+
+        .world{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 0;
+            display: grid;
+            place-items: center;
+            padding: 2rem;
+            /* transform: rotate(45deg); */
+            overflow: hidden;
+            
+
+            &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                bottom: 0;
+                background-color: rgba(0,0,0,.7);
+                /* background-color: red; */
+
+
+            }
+
+            img{
+                width: 100%;
+                animation: roll 10s infinite linear;
+                opacity: .5;
+                /* transform: scale(1.5); */
+                /* position: absolute; */
+                /* top: -30%; */
+
+                
+
+            }
+
+
+            @keyframes roll {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        }
 
 
 

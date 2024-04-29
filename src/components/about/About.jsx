@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { AboutStyle } from "./aboutStyle";
 import AboutImg from "../../assets/about.jpg";
 import { FaNodeJs, FaReact, FaPython } from "react-icons/fa";
+import AboutImage from '../../assets/images/about.png'
 
 import {
   BiLogoFlask,
@@ -37,36 +38,12 @@ function About() {
   return (
     <>
       <AboutStyle>
-        <div className="skills" data-aos="zoom-in">
-          <h2>What i am good At.</h2>
-          <div>
-            <div>
-              <DiJavascript1 />
-            </div>
-            <div>
-              <FaReact />
-            </div>
-            <div>
-              <FaNodeJs />
-            </div>
-            <div>
-              <FaPython />
-            </div>
-            <div>
-              <BiLogoFlask />
-            </div>
-            <div>
-              <BiLogoDjango />
-            </div>
-            <div>
-              <BiLogoMongodb />
-            </div>
-            <div>
-              <DiMysql />
-            </div>
-          </div>
-        </div>
+      <div className='bottonDesign'>
 
+</div>
+        <div className="skills" data-aos="zoom-in">
+          <img src={AboutImage} alt="" />
+        </div>
         <div className="about-me" data-aos="zoom-in">
           <h1>About me</h1>
           <h2>Hello, I'am Nathanim Tadele </h2>

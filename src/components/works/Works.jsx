@@ -9,6 +9,7 @@ import project3Img from '../../assets/p3.jpeg'
 import project4Img from '../../assets/p4.jpg'
 import project5Img from '../../assets/p5.png'
 import project6Img from '../../assets/p6.png'
+import AnimateImage from '../../assets/images/animate.gif'
 import {
     FaNodeJs,
     FaReact,
@@ -158,18 +159,28 @@ function Works() {
                 </div>
             </div>
         </div>
-       <div class="experience-container">
+       <div className="experience-container">
+        <div className='animationGif'>
+            <img src={AnimateImage} alt=''/>
+        </div>
+        <div>
+            <h2>My Coding Journey</h2>
             <h1>My Junior Dev <span>Chronicles</span> 🚀</h1>
             <p>Embarking on my web development journey was like stepping into a coding wonderland. I vividly remember the thrill of riding the CSS Battle and Frontend Mentor rollercoaster, where every line of code became a brushstroke in the canvas of my pixel-perfect masterpieces! 🎨</p>
             
             <p>As a junior coder, my debugger was my trusty sidekick – a superhero training tool. Together, we conquered bugs, transformed errors into opportunities, and turned coding challenges into triumphs. Each keystroke felt like crafting my destiny as a web wizard!</p>
-            <p>These are the <span>Super Powers</span> that made me what I am now:</p>
+            <p>These are the <span>superpowers</span> that have shaped me into who I am today, alongside my unwavering consistency and belief in myself.</p>
             <ul>
-                <li><NavLink to="https://www.alxafrica.com/programmes/" target="_blank" rel="noopener noreferrer"> < FaFire/>ALX Africa</NavLink> Completed the Full Stack Software Engineering Intensive Course and emerged as a coding superhero!</li>
-                <li><NavLink to="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer"> < FaFire/>The Odin Project</NavLink> Conquered the full stack web development course like a mythical deity!</li>
-                <li><NavLink to="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer"> < FaFire/>Frontend Mentor</NavLink> Where I honed my frontend skills and became a design maestro.</li>
-                <li><NavLink to="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer"> < FaFire/>CSS Battle</NavLink> The arena where I battled with CSS challenges and emerged victorious!</li>
+                <li><NavLink to="https://www.alxafrica.com/programmes/" target="_blank" rel="noopener noreferrer"> < FaFire/>ALX Africa</NavLink> </li>
+                <li><NavLink to="https://www.theodinproject.com/" target="_blank" rel="noopener noreferrer"> < FaFire/>The Odin Project</NavLink></li>
+                <li><NavLink to="https://www.frontendmentor.io/" target="_blank" rel="noopener noreferrer"> < FaFire/>Frontend Mentor</NavLink> </li>
+                <li><NavLink to="https://cssbattle.dev/" target="_blank" rel="noopener noreferrer"> < FaFire/>CSS Battle</NavLink></li>
             </ul>
+        </div>
+      </div>
+      <div className='footer'>
+            <h2>Hey, fellow nerds! I'm craving a cup of coffee, so why not join me? Just give me a call, and let's make it happen!" ☕️</h2>
+            <NavLink to='/contact'>Get in Touch</NavLink>
       </div>
     </WorksStyle>
     </>

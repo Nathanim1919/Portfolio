@@ -21,7 +21,7 @@ function App() {
           <Hero/>
           </div>
           <About/>
-          <CurrentUpdate/>
+          {/* <CurrentUpdate/> */}
           <Services/>
           <Works/>
           <Success setSendMsg={setSendMsg} setSucces={setSucces} sendMsg={sendMsg} success = {success}/>

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import axios from 'axios';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Contactmage from '../../assets/images/contact.png'
 
 
 function Contact({setSendMsg, setSucces}) {
@@ -35,25 +36,25 @@ function Contact({setSendMsg, setSucces}) {
     }
   }
 
-  // const newFun = () =>{
-  //   console.log("hello, world!")
-  // }
 
   return (
     <ContactStyle id='contact'>
+     
+      <div className='world'>
+        <img src={Contactmage} alt=''/>
+        </div>
       <div>
-      <h1  data-aos="fade-up">Contact Me</h1>
-      <p  data-aos="fade-up">Feel free to contact me any time. I will get back to you as soon as I can!</p>
-      <form form data-aos = "zoom-in"
-      onSubmit = {
-        (e) => handleForm(e)
-      } >
-        <input value={name} required onChange={(e) => setName(e.target.value)} type="text" placeholder="Name" />
-        <input value={email} required onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" />
-        <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" placeholder="Message" />
-        <button type="submit">Send</button>
-      </form>
-
+          <h1  data-aos="fade-up">Contact Me</h1>
+          <p  data-aos="fade-up">Feel free to contact me any time. I will get back to you as soon as I can!</p>
+          <form form data-aos = "zoom-in"
+          onSubmit = {
+            (e) => handleForm(e)
+          } >
+            <input value={name} required onChange={(e) => setName(e.target.value)} type="text" placeholder="Name" />
+            <input value={email} required onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" />
+            <input value={message} onChange={(e) => setMessage(e.target.value)} type="text" placeholder="Message" />
+            <button type="submit">Send</button>
+          </form>
       </div>
     </ContactStyle>
   );
@@ -61,15 +62,37 @@ function Contact({setSendMsg, setSucces}) {
 export default Contact
 
 const ContactStyle = styled.div`
-  display: grid;
-  place-items: center;
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 20;
+  width: 90%;
+  margin: auto;
+
+
+  @media screen and (max-width: 800px){
+    width: 100%;
+    flex-direction: column;
+
+
+    >*{
+      margin: 0;
+    }
+  }
+
+
+  .world img{
+    width: 100%;
+    height: auto;
+  
+  }
 >div{
 
     display: grid;
     place-items: center;
     padding: 3rem;
-    background-color:rgba(0,0,0,.4);
+    /* background-color:rgba(0,0,0,.4); */
     margin:3rem;
     color:#fff;
     width: 70%;

@@ -31,6 +31,8 @@ import {
     SiMysql
 } from "react-icons/si";
 import 'aos/dist/aos.css'
+import ScreenImage from '../../assets/images/screen2.png'
+
 
 function Services() {
 
@@ -49,49 +51,39 @@ function Services() {
                     seamless and interactive experience for your audience.</p>
             </div>
 
+                <div data-aos="zoom-in" className='screenImage'>
+                    {/* <img src={ScreenImage} alt=''/> */}
+                </div>    
 
             <div className='services'>
-                <div data-aos="zoom-in">
-                    <div>
-                        <SiSimilarweb/>
-                    </div>
-                    <h2>Front-end Development</h2>
-                    <p>I specialize in crafting engaging and visually appealing user interfaces for websites, ensuring a
-                        seamless and interactive experience for your audience. Technologies: ReactJS, Redux.</p>
-                    <div className='tech'>
-                        <li><FaReact/></li>
-                        <li><DiJavascript1/></li>
-                        <li><FaHtml5/></li>
-                    </div>
-                </div>
+            <div data-aos="zoom-in">
+    <div>
+        <SiSimilarweb/>
+    </div>
+    <h2>Front-end Enthusiast</h2>
+    <p>My passion lies in sculpting captivating and immersive user interfaces that leave a lasting impression. With expertise in ReactJS and Redux, I'm dedicated to creating seamless and interactive experiences for your audience.</p>
+</div>
+
 
                 <div data-aos="zoom-in">
-                    <div>
-                        <AiFillRobot/>
-                    </div>
-                    <h2>Back-end Development</h2>
-                    <p>With a focus on server-side logic and database management, I excel in building robust and
-                        scalable back-end systems to power your web applications. Technologies: Node.js, MongoDB, SQLDB,
-                        Django, Flask.</p>
-                    <div className='tech'>
-                        <li><FaNodeJs/></li>
-                        <li><DiDjango/></li>
-                        <li>< BiLogoFlask/></li>
-                    </div>
+                <div>
+                    <AiFillRobot/>
                 </div>
-                <div data-aos="zoom-in">
-                    <div>
-                        <BsDatabaseFillLock/>
-                    </div>
-                    <h2>Database Expertise</h2>
-                    <p>With a focus on database design, management, and optimization, I excel in building robust and
-                        scalable back-end systems to power your web applications. Technologies: MongoDB, MySQL, SQL
-                        Server, Node.js, Django, Flask.</p>
-                    <div className='tech'>
-                        <li><BiLogoMongodb/></li>
-                        <li><SiMysql/></li>
-                    </div>
+                <h2>Backend Specialist @ALX Africa</h2>
+                <p>Armed with expertise in various server-side technologies like Node.js, Spring Boot, and Flask, 
+                    I've honed my skills at ALX Africa to craft robust and scalable backend systems. 
+                    From server-side logic to database management, I thrive in building the backbone of web applications.
+                     </p>
+            </div>
+
+            <div data-aos="zoom-in">
+                <div>
+                    <BsDatabaseFillLock/>
                 </div>
+                <h2>Master of Databases</h2>
+                <p>Specializing in database design, management, and optimization, I craft resilient and scalable backend systems to drive your web applications forward. Proficient in MongoDB, MySQL, SQL, and Redis, I ensure your data infrastructure is both robust and efficient.</p>
+           </div>
+
 
             </div>
         </ServiceStyle>
@@ -104,21 +96,14 @@ const ServiceStyle = styled.div`
     display: grid;
     place-items: center;
     padding: 0rem 1rem;
-    background-color: rgba(0, 0, 0, .4);
+    /* background-color: rgba(0, 0, 0, .4); */
     position: relative;
     overflow: hidden;
     width: 100vw;
+    height: 100%;
+    position: relative;
+    z-index: 20;
 
-    &::after {
-        content: '';
-        background-color: rgba(0, 0, 0, .2);
-        width: 30rem;
-        height: 30rem;
-        position: absolute;
-        top: 6rem;
-        transform: rotate(45deg);
-        z-index: 0;
-    }
 
     .header {
         display: flex;
@@ -158,19 +143,35 @@ const ServiceStyle = styled.div`
     }
 
     h3 {
-        font-size: .9rem;
+        font-size: 3rem;
         color: orange;
     }
 
     h2 {
-        font-size: 1.3rem;
+        font-size: 4rem;
         color: #fff;
     }
 
     p {
         text-align: center;
         color: #eee;
+        font-size: 1.2rem;
     }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 2rem;
+        
+        }
+
+        h3 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        
+        }
 
 }
 
@@ -179,10 +180,23 @@ const ServiceStyle = styled.div`
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 3rem;
-    width: 80%;
+    width: 70%;
     margin: 3rem auto;
     position: relative;
     padding: 2rem;
+
+
+    > div:nth-child(2) {
+        position: relative;
+        z-index: 5;
+        transform: scale(1.2);
+        transition: all .3s ease-in-out;
+        @media screen and (max-width: 800px){
+            transform: scale(1);
+        }
+    }
+
+ 
 
 
     > div {
@@ -191,17 +205,16 @@ const ServiceStyle = styled.div`
         flex-direction: column;
         justify-content: space-between;
         padding: 1rem;
-        box-shadow: 0 9px 20px rgba(0, 0, 0, .071);
+        box-shadow: 0 19px 50px rgba(0, 0, 0, .071);
         gap: .6rem;
         border-radius: 10px;
-        background-color: rgba(255, 255, 255, .03);
+        background: linear-gradient(90deg, #364b7b7d 0%, #18284856 100%);
         backdrop-filter: blur(20px);
-        position: relative;
-        z-index: 3;
         overflow: hidden;
         cursor: pointer;
         border: 1px solid #333;
         text-align: left;
+        transition: all .3s ease-in-out;
 
         .tech {
             display: flex;
@@ -244,7 +257,7 @@ const ServiceStyle = styled.div`
         }
 
         h2 {
-            font-size: 1rem;
+            font-size: 2rem;
             position: relative;
             padding: 0.3rem;
 
@@ -261,7 +274,7 @@ const ServiceStyle = styled.div`
 
         p {
             color: #868382;
-            font-size: .9rem;
+            font-size: 1.2rem;
             text-align: left;
         }
     }

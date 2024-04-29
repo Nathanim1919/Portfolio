@@ -1,5 +1,6 @@
 import React,{useEffect} from 'react'
 import MyImage from '../../assets/me.png'
+import WorldImage from '../../assets/images/world.png'
 import { HeroStyle } from './heroStyle'
 import {
   FaNodeJs,
@@ -28,6 +29,9 @@ function Hero() {
   return (
     <>
     <HeroStyle id='hero'>
+      <div className='world'>
+        <img src={WorldImage} alt=''/>
+      </div>
         <div className='hero-text' data-aos="fade-right">
           <h3>Hello, I'm Nathanim T.</h3>
             <h1> a Full-Stack Software<br/>Developer.</h1>
@@ -65,6 +69,7 @@ function Hero() {
             <img src={MyImage} alt=''/>
           </div>
         </div>
+    
     </HeroStyle>
     </>
   )

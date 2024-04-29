@@ -5,6 +5,8 @@ export const WorksStyle = styled.div`
     display: grid;
     padding:2rem 0rem;
     width:100vw;
+    position: relative;
+    z-index: 20;
 
     .header{
         display: flex;
@@ -12,10 +14,15 @@ export const WorksStyle = styled.div`
         align-items: center;
 
         h2{
-            font-size: 1rem;
+            font-size: 3rem;
             color:gold;
             background-color: #333;
             padding: .3rem 2rem;
+
+
+            @media screen and (max-width: 800px){
+                font-size: 1rem;
+            }
         }
 
         >div{
@@ -28,7 +35,7 @@ export const WorksStyle = styled.div`
                 background-color: #333;
                 color: gold;
                 text-decoration: none;
-                font-size: .8rem;
+                font-size: 1rem;
                 padding: 0.2rem;
                 border-radius: 3px;
 
@@ -143,10 +150,25 @@ export const WorksStyle = styled.div`
     }
       .experience-container{
                 color: #fff;
-                width: 90%;
+                width: 100%;
                 margin: 1rem auto;
-                padding: 2rem;
+                /* padding: 2rem; */
+                background-color: rgba(0,0,0,.07);
+                backdrop-filter: blur(20px);
                 position: relative;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+                >div:nth-child(2){
+                    padding: 1rem;
+                }
+
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
 
                 
                 h1 span:nth-of-type(1){
@@ -231,4 +253,37 @@ export const WorksStyle = styled.div`
             }
         }
    } 
+
+   .footer{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 1rem;
+         margin: 1rem 0;
+         flex-direction: column;
+         /* background-color: rgba(0,0,0,.07); */
+         backdrop-filter: blur(10px);
+         color: #fff;
+         padding: 2rem;
+         width: 50%;
+         margin: auto;
+    
+         a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: .7rem;
+              cursor: pointer;
+              background-color: #333;
+              color: gold;
+              text-decoration: none;
+              font-size: 1rem;
+              padding: 0.2rem;
+              border-radius: 3px;
+    
+              &:hover{
+                opacity: .6;
+              }
+         }
+   }
 `
