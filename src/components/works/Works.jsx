@@ -81,15 +81,17 @@ function Works() {
                 </div>
                 <div className='textContent' data-aos="fade-right">
                     <h2>Project Manegment Web App</h2>
-                    <p>Developed a web-based project management application with robust chat functionality, project scheduling, and priority management for efficient collaboration and task organization.</p>
+                    <h3>Project Hive</h3>
+                    <p>Developed a project management web app with a clean, user-friendly interface, enabling users to create, assign, and track tasks, set deadlines, and monitor project progress.</p>
+                    <p>Technologies used: MERN-stack</p>
                     <div className='technologies'>
                         <FaReact/>
                         <FaNodeJs/>
                         <BiLogoMongodb/>
                     </div>
                     <div>
-                        <NavLink to={'https://github.com/Nathanim1919/Project-Hive'} traget="_blank">Live Demo</NavLink>
-                        <NavLink to={'https://projecthive.nathanim.me/'} traget="_blank">Source code</NavLink>
+                        <NavLink to={'https://projecthive.nathanim.me'} traget="_blank">Live Demo</NavLink>
+                        <NavLink to={'https://github.com/Nathanim1919/Project-Hive'} traget="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>
@@ -99,13 +101,15 @@ function Works() {
                 </div>
                 <div className='textContent' data-aos="fade-left">
                     <h2>E-learning Front-end Design</h2>
-                    <p>Crafted a dynamic e-learning front-end using React, offering an engaging user interface for seamless online education with rich multimedia content and interactive features.</p>
+                    <h3>Online Education Platform</h3>
+                    <p>Designed and developed a user-friendly e-learning platform with a modern, intuitive interface, enabling students to access courses, quizzes, and resources with ease.</p>
+                    <p>Technologies used: React.js</p>
                     <div className='technologies'>
                         <FaReact/>
                     </div>
                     <div>
-                        <NavLink to={"https://nathanim1919.github.io/E-learning/"} target="_blank">Live Demo</NavLink>
-                        <NavLink to={"https://github.com/Nathanim1919/E-learning"} target="_blank">Source code</NavLink>
+                        <NavLink to={"https://e-learn.nathanim.me"} target="_blank">Live Demo</NavLink>
+                        <NavLink to={"https://nathanim1919.github.io/E-learning/"} target="_blank">Source code</NavLink>
                     </div>
                 </div>
             </div>
@@ -115,7 +119,9 @@ function Works() {
                 </div>
                 <div className='textContent' data-aos="fade-right">
                     <h2>Entertainment web app</h2>
+                    <h3>Movie App</h3>
                     <p>Designed and developed a user-friendly movie app with an intuitive interface, enabling users to discover, browse, and explore movies with detailed information, ratings, and trailers.</p>
+                    <p>Technologies used: CSS3, JavaScript</p>
                     <div className='technologies'>
                        <BiLogoCss3/>
                        <DiJavascript1/>
@@ -131,8 +137,10 @@ function Works() {
                     <img src={project5Img} alt=''/>
                 </div>
                 <div className='textContent' data-aos="fade-right">
-                    <h2>Entertainment web app</h2>
-                    <p>Designed and developed a user-friendly movie app with an intuitive interface, enabling users to discover, browse, and explore movies with detailed information, ratings, and trailers.</p>
+                    <h2>F-vision - Financial Asistance</h2>
+                    <h3>F-vsion is a personal financial assistance that i build as final project for my ALX foundation program</h3>
+                    <p>Developed a personal financial assistant web app that helps users track their expenses, manage budgets, and set financial goals, with a clean, user-friendly interface and intuitive features.</p>
+                    <p>Technologies used: MERN-stack, SO.io for realtime-notification</p>
                     <div className='technologies'>
                        <BiLogoCss3/>
                        <DiJavascript1/>
@@ -148,12 +156,11 @@ function Works() {
                     <img src={project6Img} alt=''/>
                 </div>
                 <div className='textContent' data-aos="fade-right">
-                    <h2>Entertainment web app</h2>
-                    <p>Designed and developed a user-friendly movie app with an intuitive interface, enabling users to discover, browse, and explore movies with detailed information, ratings, and trailers.</p>
-                    <div className='technologies'>
-                       <BiLogoCss3/>
-                       <DiJavascript1/>
-                    </div>
+                    <h2>A Landing Page For Smart-Flow</h2>
+                    <h3>SmartFlow is an AI Automation Agency dedicated to enhancing business.</h3>
+                    <p>Designed and developed a landing page for SmartFlow, an AI automation agency, with a sleek, modern design and engaging content to attract potential clients and showcase the company's services.
+                    </p>
+                    <p>Technologies used:Styled-component, React.js</p>
                     <div>
                         <NavLink to={"https://smartflow.nathanim.me"} target="_blank">Live Demo</NavLink>
                         <NavLink to={"https://github.com/Nathanim1919/"} target="_blank">Source code</NavLink>
