@@ -63,6 +63,7 @@ function Works() {
                 </div>
                 <div className='textContent' data-aos="fade-left">
                     <h2>Social Media Web App</h2>
+                    <h3>Social Hive</h3>
                     <p>Built a MERN stack social media app with essential features like real-time chat, post creation, story sharing, and interactive liking and commenting.</p>
                     <div className='technologies'>
                         <FaReact/>

@@ -92,7 +92,7 @@ export const WorksStyle = styled.div`
                 gap: 1rem;
             }
 
-            >div:nth-child(4){
+            >div{
                 button{
                     padding: .4rem .5rem;
                     border: none;
