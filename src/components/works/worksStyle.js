@@ -72,11 +72,11 @@ export const WorksStyle = styled.div`
                     font-size: 2rem;
                 }
 
-            >div:nth-child(4){
+            >div{
                 display:flex;
                 align-items:center;
 
-                >*{
+                a{
                     color:#fff;
                     text-decoration:none;
                     background-color:#fff;

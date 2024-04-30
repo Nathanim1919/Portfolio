@@ -207,7 +207,7 @@ const ServiceStyle = styled.div`
         padding: 1rem;
         box-shadow: 0 19px 50px rgba(0, 0, 0, .071);
         gap: .6rem;
-        border-radius: 0px 15%;
+        border-radius: 15% 0px;
         background: linear-gradient(90deg, #1c263c 0%, #18284856 100%);
         backdrop-filter: blur(20px);
         overflow: hidden;
@@ -237,11 +237,6 @@ const ServiceStyle = styled.div`
         > * {
             position: relative;
             z-index: 5;
-        }
-
-        &:hover {
-            border-radius:10% 0;
-            color: #fff;
         }
 
 

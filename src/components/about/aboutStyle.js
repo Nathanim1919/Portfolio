@@ -20,7 +20,7 @@ export const AboutStyle= styled.div`
 
     .bottonDesign{
             position: absolute;
-            top: -30%;
+            top: -10%;
             left: 0;
             right: 0;
             width: 100vw;
@@ -28,6 +28,22 @@ export const AboutStyle= styled.div`
             background-color: red;
             background:linear-gradient(to bottom,transparent,rgba(0,0,0,.9), rgba(0,0,0,9),rgba(0,0,0,92), rgba(0,0,0,94),rgba(0,0,0,95),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,.65),rgba(0,0,0,.24), transparent);
             z-index: 0;
+            display: grid;
+            place-items: center;
+
+
+            img{
+                width: 40%;
+                height: auto;
+                position: relative;
+                right: -15%;
+                top: -25%;
+                opacity: 1;
+
+                @media screen and (max-width:800px){
+                    display: none;
+                }
+            }
         }
        
     
@@ -39,6 +55,11 @@ export const AboutStyle= styled.div`
             margin-top: 8rem;
             align-items: flex-start;
             gap: 1rem;
+            background:linear-gradient(to bottom, rgba(0,0,0,rgba(0,0,0,.24), transparent));
+            backdrop-filter: blur(10px);
+            padding: 3rem;
+            box-shadow: 0 19px 54px rgba(0,0,0,.65);
+            border-radius: 20px;
 
 
             @media screen and (max-width:800px){

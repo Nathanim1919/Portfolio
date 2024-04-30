@@ -48,8 +48,8 @@ export const HeroStyle = styled.div`
 
             img{
                 width: 100%;
-                animation: roll 10s infinite linear;
-                opacity: .5;
+                animation: roll 30s infinite linear;
+                opacity: .3;
                 /* transform: scale(1.5); */
                 /* position: absolute; */
                 /* top: -30%; */

@@ -3,6 +3,7 @@ import { AboutStyle } from "./aboutStyle";
 import AboutImg from "../../assets/about.jpg";
 import { FaNodeJs, FaReact, FaPython } from "react-icons/fa";
 import AboutImage from '../../assets/images/about.png'
+import ScreenImage from '../../assets/images/screen2.png'
 
 import {
   BiLogoFlask,
@@ -39,12 +40,12 @@ function About() {
     <>
       <AboutStyle>
       <div className='bottonDesign'>
-
-</div>
+          <img src={ScreenImage} alt=""/>
+      </div>
         <div className="skills" data-aos="zoom-in">
           <img src={AboutImage} alt="" />
         </div>
-        <div className="about-me" data-aos="zoom-in">
+        <div className="about-me">
           <h1>About me</h1>
           <h2>Hello, I'am Nathanim Tadele </h2>
           <p className="about">
