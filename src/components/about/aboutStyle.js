@@ -5,7 +5,7 @@ export const AboutStyle= styled.div`
     display: flex;
     justify-content: space-around;
     z-index: 20;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     align-items: center;
     background-color: rgba(0,0,0,.01);
@@ -22,10 +22,11 @@ export const AboutStyle= styled.div`
             position: absolute;
             top: -30%;
             left: 0;
+            right: 0;
             width: 100vw;
-            height: 70%;
+            height: 100vh;
             background-color: red;
-            background:linear-gradient(to bottom,transparent,rgba(0,0,0,.8), rgba(0,0,0,.9),rgba(0,0,0,.9),rgba(0,0,0,.65),rgba(0,0,0,.24), transparent);
+            background:linear-gradient(to bottom,transparent,rgba(0,0,0,.9), rgba(0,0,0,9),rgba(0,0,0,92), rgba(0,0,0,94),rgba(0,0,0,95),rgba(0,0,0,1),rgba(0,0,0,1),rgba(0,0,0,.65),rgba(0,0,0,.24), transparent);
             z-index: 0;
         }
        
@@ -40,11 +41,18 @@ export const AboutStyle= styled.div`
             gap: 1rem;
 
 
+            @media screen and (max-width:800px){
+               padding: 3rem;
+            }
+            
+
           
             
 
             >*{
                 margin: 0;
+
+
             
             }
 
@@ -71,5 +79,15 @@ export const AboutStyle= styled.div`
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+
+
+    button{
+        padding: .6rem 2rem;
+        background-color: #333;
+        color: orange;
+        border: none;
+        font-weight: 600;
+        border-radius: 10px;
     }
 `

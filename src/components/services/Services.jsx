@@ -154,7 +154,7 @@ const ServiceStyle = styled.div`
 
     p {
         text-align: center;
-        color: #eee;
+        color: #fff;
         font-size: 1.2rem;
     }
 
@@ -207,12 +207,11 @@ const ServiceStyle = styled.div`
         padding: 1rem;
         box-shadow: 0 19px 50px rgba(0, 0, 0, .071);
         gap: .6rem;
-        border-radius: 10px;
-        background: linear-gradient(90deg, #364b7b7d 0%, #18284856 100%);
+        border-radius: 0px 15%;
+        background: linear-gradient(90deg, #1c263c 0%, #18284856 100%);
         backdrop-filter: blur(20px);
         overflow: hidden;
         cursor: pointer;
-        border: 1px solid #333;
         text-align: left;
         transition: all .3s ease-in-out;
 
@@ -241,7 +240,7 @@ const ServiceStyle = styled.div`
         }
 
         &:hover {
-            border: 1px solid orange;
+            border-radius:10% 0;
             color: #fff;
         }
 
@@ -273,9 +272,10 @@ const ServiceStyle = styled.div`
         }
 
         p {
-            color: #868382;
-            font-size: 1.2rem;
+            color: #ffffff;
+            font-size: 1rem;
             text-align: left;
+            font-weight: 100;
         }
     }
 }

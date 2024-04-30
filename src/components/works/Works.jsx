@@ -10,6 +10,8 @@ import project4Img from '../../assets/p4.jpg'
 import project5Img from '../../assets/p5.png'
 import project6Img from '../../assets/p6.png'
 import AnimateImage from '../../assets/images/animate.gif'
+import screenmage from '../../assets/images/screen3.png'
+
 import {
     FaNodeJs,
     FaReact,
@@ -160,10 +162,10 @@ function Works() {
             </div>
         </div>
        <div className="experience-container">
-        <div className='animationGif'>
+        <div className='animationGif' data-aos="zoom-in">
             <img src={AnimateImage} alt=''/>
         </div>
-        <div>
+        <div data-aos="fade-up">
             <h2>My Coding Journey</h2>
             <h1>My Junior Dev <span>Chronicles</span> 🚀</h1>
             <p>Embarking on my web development journey was like stepping into a coding wonderland. I vividly remember the thrill of riding the CSS Battle and Frontend Mentor rollercoaster, where every line of code became a brushstroke in the canvas of my pixel-perfect masterpieces! 🎨</p>
@@ -179,8 +181,11 @@ function Works() {
         </div>
       </div>
       <div className='footer'>
-            <h2>Hey, fellow nerds! I'm craving a cup of coffee, so why not join me? Just give me a call, and let's make it happen!" ☕️</h2>
-            <NavLink to='/contact'>Get in Touch</NavLink>
+            <img src={screenmage} alt='screen'/>
+            <div className='content' data-aos="zoom-in">
+                <h2>Hey, fellow nerds! I'm craving a cup of coffee, so why not join me? Just give me a call, and let's make it happen!" ☕️</h2>
+                <NavLink to='/contact'>Get in Touch</NavLink>
+            </div>
       </div>
     </WorksStyle>
     </>

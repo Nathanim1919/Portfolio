@@ -56,7 +56,7 @@ function About() {
             environments. Let's connect and explore how we can work together on
             exciting projects.
           </p>
-          <button onClick={handleDownload}>CV here</button>
+          <button onClick={handleDownload}>Download CV</button>
         </div>
       </AboutStyle>
     </>

@@ -262,11 +262,46 @@ export const WorksStyle = styled.div`
          margin: 1rem 0;
          flex-direction: column;
          /* background-color: rgba(0,0,0,.07); */
-         backdrop-filter: blur(10px);
+         /* backdrop-filter: blur(10px); */
          color: #fff;
          padding: 2rem;
+         height: 100vh;
          width: 50%;
          margin: auto;
+         position: relative;
+
+         @media screen and (max-width:800px){
+            width: 100%;
+            padding: 0;
+         }
+         
+
+         img{
+            position: absolute;
+            width: 70%;
+            height: auto;
+            z-index: 1;
+         }
+
+         .content{
+            position: relative;
+            bottom: 0;
+            z-index: 2;
+            background-color: rgba(0,0,0,.5);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem 0;
+            border-radius: 20px;
+            box-shadow: 0 14px 45px rgba(0,0,0,.07);
+            
+
+            >*{
+                padding: 1rem;
+                margin: 0;
+            }
+         }
     
          a{
               display: flex;

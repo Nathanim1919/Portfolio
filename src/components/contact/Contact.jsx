@@ -40,7 +40,7 @@ function Contact({setSendMsg, setSucces}) {
   return (
     <ContactStyle id='contact'>
      
-      <div className='world'>
+      <div className='world' data-aos="fade-right">
         <img src={Contactmage} alt=''/>
         </div>
       <div>
@@ -67,8 +67,9 @@ const ContactStyle = styled.div`
   align-items: center;
   position: relative;
   z-index: 20;
-  width: 90%;
+  width: 70%;
   margin: auto;
+  /* background-color: red; */
 
 
   @media screen and (max-width: 800px){
@@ -78,6 +79,7 @@ const ContactStyle = styled.div`
 
     >*{
       margin: 0;
+      flex: 1;
     }
   }
 
@@ -91,11 +93,12 @@ const ContactStyle = styled.div`
 
     display: grid;
     place-items: center;
-    padding: 3rem;
+    /* padding: 3rem; */
     /* background-color:rgba(0,0,0,.4); */
-    margin:3rem;
+    /* margin:3rem; */
     color:#fff;
     width: 70%;
+    flex: 1;
 
     h1{
       font-size: clamp(2rem ,5vw , 3rem);

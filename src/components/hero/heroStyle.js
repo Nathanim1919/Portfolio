@@ -90,6 +90,8 @@ export const HeroStyle = styled.div`
             align-items: flex-start;
             gap: 1rem;
             padding: 1rem;
+            position: relative;
+            z-index: 200;
 
             @media screen and (max-width: 768px){
                        width: 85%;
@@ -106,7 +108,7 @@ export const HeroStyle = styled.div`
                     font-weight: 200;
                 }
                 h1{
-                    font-size: 6rem;
+                    font-size: 5rem;
                     line-height: 75px;
                     color: #fff;
                     letter-spacing: 5px;
