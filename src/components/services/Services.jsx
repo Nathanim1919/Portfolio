@@ -69,7 +69,7 @@ function Services() {
                 <div>
                     <AiFillRobot/>
                 </div>
-                <h2>Backend Specialist @ALX Africa</h2>
+                <h2>Backend Specialist</h2>
                 <p>Armed with expertise in various server-side technologies like Node.js, Spring Boot, and Flask, 
                     I've honed my skills at ALX Africa to craft robust and scalable backend systems. 
                     From server-side logic to database management, I thrive in building the backbone of web applications.
@@ -148,7 +148,7 @@ const ServiceStyle = styled.div`
     }
 
     h2 {
-        font-size: 4rem;
+        font-size: 2rem;
         color: #fff;
     }
 
@@ -160,12 +160,12 @@ const ServiceStyle = styled.div`
 
     @media screen and (max-width: 768px) {
         h2 {
-            font-size: 2rem;
+            font-size: 1.3rem;
         
         }
 
         h3 {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         p {
@@ -251,7 +251,7 @@ const ServiceStyle = styled.div`
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             position: relative;
             padding: 0.3rem;
 
@@ -267,10 +267,10 @@ const ServiceStyle = styled.div`
         }
 
         p {
-            color: #ffffff;
+            color: #ffffffcf;
             font-size: 1rem;
             text-align: left;
-            font-weight: 100;
+            /* font-weight: 100; */
         }
     }
 }

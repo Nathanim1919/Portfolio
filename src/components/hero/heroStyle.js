@@ -8,9 +8,10 @@ export const HeroStyle = styled.div`
         z-index: 3;
         background-color: transparent;
         overflow: hidden; 
-        font-family: "Jersey 20", sans-serif;
-        font-weight: 400;
+        /* font-family: "Jersey 20", sans-serif; */
+        font-weight: 1000;
         font-style: normal;
+        /* font-family: "Titillium Web", sans-serif; */
 
 
 
@@ -109,7 +110,7 @@ export const HeroStyle = styled.div`
                 }
                 h1{
                     font-size: 5rem;
-                    line-height: 75px;
+                    line-height: 85px;
                     color: #fff;
                     letter-spacing: 5px;
                     position: relative;

@@ -121,7 +121,8 @@ export const WorksStyle = styled.div`
             h2{
                 font-size: 2rem;
                 font-weight: 500;
-                background-color:#333;
+                background-color:rgba(0,0,0,.07);
+                backdrop-filter: blur(10px);
                 color:gold;
                 font-weight: bolder;
                 padding:.3rem 1rem;
@@ -278,7 +279,7 @@ export const WorksStyle = styled.div`
 
          img{
             position: absolute;
-            width: 70%;
+            width: 100%;
             height: auto;
             z-index: 1;
          }
@@ -295,7 +296,7 @@ export const WorksStyle = styled.div`
             padding: 1rem 0;
             border-radius: 20px;
             box-shadow: 0 14px 45px rgba(0,0,0,.07);
-            
+            text-align: center;
 
             >*{
                 padding: 1rem;

@@ -84,7 +84,7 @@ export const AboutStyle= styled.div`
 
             p{
                 width: 70%;
-                font-size: 1.4rem;
+                font-size: 1rem;
             }
             @media screen and (max-width: 800px){
                 margin-top: 0rem;

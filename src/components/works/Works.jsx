@@ -10,7 +10,7 @@ import project4Img from '../../assets/p4.jpg'
 import project5Img from '../../assets/p5.png'
 import project6Img from '../../assets/p6.png'
 import AnimateImage from '../../assets/images/animate.gif'
-import screenmage from '../../assets/images/screen3.png'
+import screenmage from '../../assets/images/screen.png'
 
 import {
     FaNodeJs,
@@ -138,7 +138,7 @@ function Works() {
                     <img src={project5Img} alt=''/>
                 </div>
                 <div className='textContent' data-aos="fade-right">
-                    <h2>F-vision - Financial Asistance</h2>
+                    <h2>Financial Asistance</h2>
                     <h3>F-vsion is a personal financial assistance that i build as final project for my ALX foundation program</h3>
                     <p>Developed a personal financial assistant web app that helps users track their expenses, manage budgets, and set financial goals, with a clean, user-friendly interface and intuitive features.</p>
                     <p>Technologies used: MERN-stack, SO.io for realtime-notification</p>
@@ -176,9 +176,6 @@ function Works() {
         <div data-aos="fade-up">
             <h2>My Coding Journey</h2>
             <h1>My Junior Dev <span>Chronicles</span> 🚀</h1>
-            <p>Embarking on my web development journey was like stepping into a coding wonderland. I vividly remember the thrill of riding the CSS Battle and Frontend Mentor rollercoaster, where every line of code became a brushstroke in the canvas of my pixel-perfect masterpieces! 🎨</p>
-            
-            <p>As a junior coder, my debugger was my trusty sidekick – a superhero training tool. Together, we conquered bugs, transformed errors into opportunities, and turned coding challenges into triumphs. Each keystroke felt like crafting my destiny as a web wizard!</p>
             <p>These are the <span>superpowers</span> that have shaped me into who I am today, alongside my unwavering consistency and belief in myself.</p>
             <ul>
                 <li><NavLink to="https://www.alxafrica.com/programmes/" target="_blank" rel="noopener noreferrer"> < FaFire/>ALX Africa</NavLink> </li>
@@ -189,9 +186,15 @@ function Works() {
         </div>
       </div>
       <div className='footer'>
-            <img src={screenmage} alt='screen'/>
+            {/* <img src={screenmage} alt='screen'/> */}
             <div className='content' data-aos="zoom-in">
-                <h2>Hey, fellow nerds! I'm craving a cup of coffee, so why not join me? Just give me a call, and let's make it happen!" ☕️</h2>
+                <p>
+                I have been working too hard to be better, better than yesterday, and at every step, what I realize is that we only truly build that betterment when we engage with real tasks within our capabilities. Building something useful is what truly makes me feel alive, and I love being a software engineer.
+
+Life is short, and creating something useful that genuinely helps people live life easier is what makes my life so interesting. 
+                </p>
+                <h4>I am always open to new opportunities and challenges, so if you have a project in mind, let's get in touch and make it happen.
+</h4>
                 <NavLink to='/contact'>Get in Touch</NavLink>
             </div>
       </div>
